@@ -1,0 +1,867 @@
+// LARGE DESKTOP
+// ------------------
+@media (min-width: 1200px) {
+
+}
+
+// DEFAULT DESKTOP
+// ---------------
+@media (min-width: 980px) {
+
+}
+
+// TABLETS
+// -----------------
+@media (max-width: 1020px) {
+	#main {
+		// width:640px;
+	}
+}
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+@media (max-width: 990px) {
+	#content-main {
+		min-height: 500px;
+	}
+	#main {
+		float:none;
+		margin:0 auto;
+	}
+	#sidebar {
+		float:none;
+		width:300px;
+		margin:0 auto;
+		padding-bottom: 40px;
+	}
+	#nav-main {
+		> ul {
+			text-align: center;
+			margin:0 auto;
+			> li {
+				float: none;
+				.inline-block;
+				text-align: left;
+				padding-right: 9px;
+				margin-right:10px;
+				> a {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	#head-main {
+		max-width:660px;
+	}
+	#nav-top {
+		margin-bottom: 30px;
+	}
+	#homepage {
+		.featured {
+			ul {
+				li {
+					height: auto;
+					figure {
+						display: none;
+					}
+					.detail {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+
+	#venue-mobile-sidebar {
+		display: block;
+		margin-bottom: 0;
+		.short-info {
+			margin-bottom: 10px;
+			figure {
+				margin-right:20px;
+				width:80px;
+				height: 80px;
+				img {
+					max-width:100%;
+					width:auto;
+					height:auto;
+				}
+			}
+			.detail {
+				float:left;
+				width:auto;
+			}
+		}
+	}
+}
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 767px) {
+	.w {
+		width:300px;
+	}
+	#main {
+		width:auto;
+	}
+	#head-main {
+		margin-bottom: 30px;
+		h1 {
+			float:none;
+			a {
+				width:auto;
+				height:42px;
+				background:url(../img/logo-small.png) 50% 0 no-repeat;
+			}
+		}
+	}
+	.nav-main-wrapper {
+		background:none;
+	}
+	#nav-main {
+		background: none;
+		> ul {
+			display: none;
+		}
+		.select-wrapper {
+			display: block;
+		}
+	}
+	#nav-top {
+		margin-bottom: 30px;
+		position: relative;
+		ul {
+			padding-top: 10px;
+			float:none;
+			clear:both;
+			text-align: center;
+			li {
+				.inline-block;
+				float:none;
+				height:auto;
+				line-height: 1.8;
+				&:after {
+					display: none;
+				}
+				a {
+					color:@grass;
+					&:hover {
+						color: @green;
+					}
+				}
+			}
+		}
+		a.register {
+			position: absolute;
+			right:0;
+			top:0;
+		}
+	}
+	#footer-main {
+		padding:15px 0;
+		.copy {
+			text-align: center;
+		}
+	}
+	#nav-footer {
+		ul {
+			text-align: center;
+			li {
+				display:block;
+				float:none;
+				line-height:2;
+			}
+		}
+	}
+	#to-top {
+		display: none;
+	}
+	#header-main {
+		#services-venues {
+			display: none;
+		}
+	}
+	#services-venues {
+		float:none;
+		margin:0 auto;
+		height:auto;
+		background:transparent;
+		margin-bottom: 20px;
+		width:300px;
+		.label {
+			position: static;
+			display: block;
+			width:auto;
+			background:url(../img/header-map-big.jpg) 50% 0 no-repeat;
+			height:124px;
+		}
+		.regions {
+			.select {
+				background-color: darken(@almost-white, 1);
+				background-position: 270px 12px;
+				&.active {
+					background-position: 270px -21px;
+				}
+			}
+			.list {
+				position: static;
+				width:300px;
+				ul {
+					> li {
+						> span {
+							background-position: 246px 12px;
+						}
+						&.active {
+							span {
+								background-position: 246px -29px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#homepage {
+		.featured {
+			min-height: 560px;
+			position: relative;
+			.poster {
+				margin:0 auto;
+				position: relative;
+				left:0;
+				top:0;
+				width:100%;
+				float:none;
+				position: static;
+				figure {
+					height: 360px;
+				}
+				.wrap {
+					height:auto;
+				}
+				.detail {
+					position: static;
+					background:url(../img/top-category-cover.jpg) 0 0 repeat;
+					.category {
+						display: none;
+					}
+					h2 {
+						text-align: center;
+						a {
+							color: #fff;
+							&:hover {
+								color:#fff;
+							}
+						}
+					}
+					.descr {
+						color: #fff;
+						p {
+							text-align: center;
+							font-size:13px;
+						}
+						a {
+							color:#fff;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			.arrows {
+				display: block;
+				.prev,
+				.next {
+					position: absolute;	
+					width:8px;
+					height:13px;
+					top:185px;
+					text-indent: -9999px;
+					display: block;
+					background-image: url(../img/arrows-thumbs.png);
+					background-repeat: no-repeat;
+				}
+				.prev {
+					background-position:0 100%;
+					left:5px;
+				}
+				.next {
+					background-position:0 0;
+					right:5px;
+				}
+			}
+			ul {
+				display: none;
+			}
+		}
+		.from-editor {
+			h3 {
+				text-align: center;
+			}
+			article.post {
+				figure {
+					float:none;
+					margin:0 auto;
+					width:auto;
+					min-height: auto;
+					img {
+						margin-bottom: 10px;
+					}
+				}
+				.detail {
+					float:none;
+					width:auto;
+					text-align: center;
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.latest {
+		margin-bottom: 25px;
+		h4 {
+			text-align: center;
+		}
+		ul {
+			li,
+			li:last-child {
+				width:200px;
+				margin:0 auto;
+				display: block;
+				float:none;
+				margin-bottom: 20px;
+			}
+			li {
+				text-align: center;
+				.entry {
+					
+					.title {
+						margin-bottom:2px;
+						text-align: center;
+					}
+					time {
+						text-align: center;
+					}
+				}
+				.goto {
+					.inline-block;
+				}
+			}
+		}
+	}
+	.featured-vendors {
+		display: none;
+	}
+
+	#top-category {
+		padding-bottom: 0;
+		.cover {
+			height:auto;
+			.detail {
+				width:auto;
+				height:auto;float:none;
+				padding-bottom: 40px;
+			}
+			figure {
+				position: static;
+				text-align: center;
+			}
+		}
+
+		.category-preview {
+			&:last-child {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+			h3 {
+				text-align: center;
+			}
+			.image {
+				float:none;
+				margin:0 auto;
+				width:auto;
+			}
+			.listing {
+				width:auto;
+				float:none;
+				text-align: center;
+				li {
+					text-align: left;
+					a:after {
+						display: none;
+					}
+				}
+				.goto {
+					.inline-block;
+				}
+			}
+		}
+	}
+	.blog-top {
+		display: none;
+	}
+	.page-title {
+		h2 {
+			font-size:24px;
+			text-align: center;
+		}
+		hgroup {
+			margin-bottom: 10px;
+			float:none;
+			text-align: center;
+			h2,
+			span,
+			h3 {
+				float:none;
+				.inline-block;
+				line-height: 30px;
+			}
+			h2 {
+				font-size:24px;
+			}
+			h3 {
+				font-size: 29px;
+			}
+		}
+	}
+	.page-title, 
+	.page-foot {
+		padding-bottom: 20px;
+		margin-bottom: 18px;
+	}
+	.page-title-container,
+	.page-foot-container {
+		h2 {
+			float:none;
+		}
+		.box {
+			margin:0 auto;
+			padding-top: 10px;
+			float: none;
+			text-align: center;
+			a {
+				float:none;
+			}
+		}
+	}
+	#advertisers {
+		.page-title-container {
+			.box {
+				a.btn {
+					float: none;
+				}
+			}
+		}
+	}
+
+	.page-foot-container {
+		margin-bottom: 20px;
+	}
+
+	.not-found {
+		p {
+			text-align: center;
+		}
+	}
+
+	article.post,
+	article.event {
+		.preview,
+		.listing-preview {
+			.by-author {
+				position: static;
+				margin:0 auto 10px;
+				display: block;
+				text-align: center;
+				img {
+					width:50px;
+					height: auto;
+				}
+			}
+			.title {
+				margin-left: 0;
+				h2 {
+					text-align: center;
+					font-size: 24px;
+				}
+			}
+			.meta {
+				text-align: center;
+			}
+			.images {
+				margin-bottom: 15px;
+			}
+		}
+		.thumbs {
+			display: none;
+		}
+		.share {
+			text-align: center;
+			> span {
+				display: block;
+				text-align: center;
+				margin-bottom: 5px;
+			}
+			> div {
+				margin-bottom: 10px;
+			}
+		}
+		.comment-body {
+			word-wrap: break-word;
+		}
+	}
+	#post {
+		article.post {
+			margin-bottom: 20px;
+		}
+	}
+
+	.pagination {
+		text-align: center;
+		float:none;
+		.page,
+		.current {
+			float:none;
+			.inline-block;
+		}
+		.previouspostslink,
+		.nextpostslink {
+			float:none;
+			.inline-block;
+		}
+	}
+
+	#in-your-area-map {
+
+	}
+	.local {
+		.map {
+			background-position: -210px 0;
+			div.florida {
+				ul {
+					left:150px;
+				}
+			}
+			div.georgia {
+				ul {
+					left:60px;
+				}
+			}
+		}
+		.regions {
+			margin-bottom: 20px;
+			border-bottom: 0;
+			padding-bottom: 0;
+			.cols {
+				.columns(100%, 0, 0);
+			}
+		}
+	}
+
+	.region-full {
+		margin-bottom: 0;
+		.story {
+			p {
+				text-align: center;
+			}
+		}
+		.events {
+			padding-bottom: 0;
+			border-bottom: 0;
+			margin-bottom: 30px;
+			h2 {
+				text-align: center;
+				font-size: 20px;
+			}
+			.image {
+				display: none;
+			}
+			.listing {
+				float:none;
+				width:auto;
+			}
+		}
+		.recent {
+			h3 {
+				text-align: center;
+			}
+			article.post {
+				figure {
+					float:none;
+					margin:0 auto;
+					width:auto;
+					min-height: auto;
+					img {
+						margin-bottom: 10px;
+					}
+				}
+				.detail {
+					float:none;
+					width:auto;
+					text-align: center;
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+		.latest-issue {
+			padding:20px;
+			figure {
+				position: static;
+				margin:0 auto 15px;
+				text-align: center;
+			}
+		}
+
+		.regions {
+			h3 {
+				text-align: center;
+			}
+			.cols {
+				.columns(100%, 0, 0);
+			}
+		}
+	}
+	.list-box {
+		h3 {
+			text-align: center;
+		}
+		&.services {
+			ul {
+				.columns(135px, 2, 15px, transparent, none, 0);
+			}
+		}
+	}
+
+	.searchbox {
+		.search-wrap {
+			.by {
+				float: none;
+				display: block;
+				text-align: center;
+				margin-bottom: 5px;
+				width:auto;
+			}
+			form {
+				text-align: center;
+				input[type=text] {
+					width:100%;
+					float:none;
+					margin-bottom: 5px;
+				}
+				input[type=submit] {
+					float:none;
+				}
+			}
+		}
+	}
+	.vendors-list {
+		margin-bottom: 20px;
+		.list {
+			ul {
+				li {
+					padding:15px 0;
+					figure {
+						float:none;
+						display: block;
+						margin:0;
+						text-align: center;
+						width:auto;
+						background-color:transparent;
+						height:auto;
+						img {
+							margin-bottom: 5px;
+						}
+					}
+					.detail {
+						margin:0;
+						padding:0 15px;
+						width:auto;
+						h2 {
+							float: none;
+							text-align: center;
+							font-size:24px;
+							width:auto;
+							margin:0 0 10px 0;
+						}
+						.descr {
+							text-align: center;
+						}
+						.more {
+							text-align: center;
+							margin-bottom: 10px;
+						}
+						.rating {
+							position: static;
+							margin:0 auto;
+							text-align: center;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+	#subscribe  {
+		.annual {
+			padding:20px;
+			figure {
+				position: static;
+				margin:0 auto 5px;
+				width:auto;
+				img {
+					max-width: 100%;
+					height:auto;
+					width:auto;
+				}
+			}
+		}
+	}
+	.issues {
+		margin-bottom: 20px;
+		ul {
+			li {
+				padding:20px;
+				figure {
+					float:none;
+					width:100%;
+					margin-bottom: 10px;
+				}
+				.detail {
+					float:none;
+					width:auto;
+					h2 {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	#expo,
+	#page-about {
+		nav {
+			ul {
+				float: none;
+				border-bottom: 0;
+				li {
+					float: none;
+					width: auto!important;
+					a {
+						border-bottom:1px solid @grass;
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+	.venue-title {
+		border-bottom: 0;
+		padding-bottom: 0;
+		hgroup {
+			clear:both;
+			margin:0 auto;
+		}
+		nav {
+			float:none;
+			ul {
+				text-align: center;
+				li {
+					.inline-block;
+					float:none;
+					margin:0 5px;
+					a {
+						float:none;
+						.inline-block;
+					}
+				}
+			}
+		}
+	}
+	.venue-full {
+		.gallery {
+			margin-bottom:45px;
+			.flexslider {
+				.slides {
+					border:0;
+					background: transparent;
+					padding:0;
+				}
+			}
+			.flex-direction-nav {
+				position: static;
+				.flex-next,
+				.flex-prev {
+					position: absolute;
+					bottom:-25px;
+					width:auto;
+					height:20px;
+					line-height:20px;
+					background-color:transparent;
+					&:hover {
+						background-color:transparent;
+					}
+				}
+				.flex-prev {
+				}
+				.flex-next {
+					background-position: -178px 50%;
+				}
+			}
+		}
+		.thumbs {
+			display: none;
+		}
+
+		.information {
+			.tab {
+				padding:30px 20px;
+				h3 {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	#venue-mobile-sidebar {
+		.short-info {
+			figure {
+				margin-right:0;
+				width:20%;
+				height:auto;
+			}
+			.detail {
+				float:right;
+				width:75%;
+				h2 {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+
+	.reviews {
+		margin-bottom: 0;
+	}
+	.review-list {
+		margin-bottom: 20px;
+		ol {
+			li {
+				header {
+					cite {
+						font-size: 14px;
+						font-weight: 500px;
+					}
+				}
+			}
+		}
+	}
+}
