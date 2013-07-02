@@ -1,4 +1,7 @@
 <?php
+/* 
+Template Name: Vendors
+*/
 /*
   ok, so this page was /in-your-area/map.  
   I'm not sure how that uRL got to this page template.  Maybe simply because the name of the page was 'map' and it looked for a template that had the name?  I'm not sure that's normal behavior.
