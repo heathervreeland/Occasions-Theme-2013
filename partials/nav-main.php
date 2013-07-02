@@ -158,7 +158,7 @@
 					</div>
 					<div class="by-location">
 						<h3>By Location</h3>
-						<a href="<?php flo_permalink('map') ?>">View the Map</a>
+						<a href="<?php flo_permalink('vendors') ?>">View the Map</a>
 					</div>
 				</div>
 			</li>
