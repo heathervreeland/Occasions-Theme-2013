@@ -30,7 +30,7 @@
 	}
 ?>
 
-<?php if ($blog_title): ?>
+<?php if ( $blog_title && !is_home() ): ?>
 <header class="page-title page-title-container cf">
 	<hgroup>
 		<?php if (is_single()): ?>
@@ -53,13 +53,13 @@
 
 		<?php else: ?>
 
-			<?php if ($top_category): ?>
+			<?php if ($top_category) { ?>
 				<h2><a href="<?php echo get_category_link($top_category); ?>"><?php echo $top_category->name; ?></a></h2>
 				<span>&raquo;</span>
 				<h3><?php echo $blog_title; ?></h3>	
-			<?php else: ?>
+			<?php } else { ?>
 				<h2><?php echo $blog_title; ?></h2>		
-			<?php endif ?>
+			<?php }?>
 
 			
 		<?php endif ?>

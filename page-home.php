@@ -3,6 +3,10 @@
 <div id="main">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div id="homepage">
+
+<? //remainder of page content commented out but not removed for future reference 
+
+?>
 		<section class="featured cf">
 			<?php $cover_query = new WP_Query(array(
 				'posts_per_page' 	=> 6,
@@ -103,7 +107,8 @@
 				<?php endwhile; ?>
 				<?php wp_reset_query(); ?>
 			</section>
-		<?php endif; ?>
+		<?php endif; 
+    ?>
 
 	</div>
 <?php endwhile; endif; ?>

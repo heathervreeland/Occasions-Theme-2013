@@ -2010,6 +2010,18 @@ input[type="button"] {
   margin-bottom: 0;
   border-bottom: 0;
 }
+.home article.post {
+  border-bottom: 1px solid #dadada;
+  margin-bottom:35px;
+}
+  .home article.post.last {
+    border-bottom:none;
+  }
+.home .featured-vendors {
+  border-bottom: 1px solid #dadada;
+  padding-bottom:35px;
+  margin-bottom:35px;
+}
 /* Blog
 *******************************/
 article.post,
@@ -2019,6 +2031,7 @@ article.event {
   margin-bottom: 24px;
   color: #363839;
 }
+.home article.post .title,
 article.post .preview .title,
 article.event .preview .title,
 article.post .listing-preview .title,
@@ -2030,6 +2043,7 @@ article.event .listing-preview .title {
   margin-bottom: 18px;
   position: relative;
 }
+.home article.post .title h2,
 article.post .preview .title h2,
 article.event .preview .title h2,
 article.post .listing-preview .title h2,
@@ -2038,6 +2052,7 @@ article.event .listing-preview .title h2 {
   font: 300 30px 'Oswald', sans-serif;
   line-height: 1.1;
 }
+.home article.post .title .meta,
 article.post .preview .title .meta,
 article.event .preview .title .meta,
 article.post .listing-preview .title .meta,
