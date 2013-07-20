@@ -205,9 +205,7 @@
 					</div>
 				<?php endif ?>
 			</div>
-			<?php if (flo_get_meta('upgrade_type') == 'upgraded') : ?>
-				<?php comments_template('/venue-reviews.php'); ?>
-			<?php endif; ?>
+      <?php comments_template('/venue-reviews.php'); ?>
 		</section>
 	<?php endwhile; else: ?>
 		<?php flo_part('notfound')?>
