@@ -16,58 +16,10 @@
 
 <div id="main">
 	<div id="region" class="region-full region-level-top" data-place="<?php echo $state->name ?>">
-		<header class="page-title">
-			<ul>
-				<li class="head">
-					<span><?php echo $state->name ?></span>
-				</li>
-				<li>
-					<a href="#">City Guides</a>
-					<ul class="sub">
-						<li class="top"><a href="#"><?php echo $state->name ?></a></li>
-						<?php $cities = get_state_cities($state); //var_dump($cities); ?>
-						<?php foreach ($cities as $city) : ?>
-						<li><a href="<?php echo get_term_link( $city ); ?>"><?php echo $city->name; ?></a></li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Venues</a>
-					<ul class="sub">
-						<?php 
-							$venues = get_terms('venue-type', array(
-								'hide_empty' => false,
-							));
-						?>
-						<?php foreach ($venues as $venue): ?>
-							<li>
-								<a href="<?php echo flo_region_venue_permalink($state, $venue->slug, 'venues') ?>"><?php echo $venue->name ?></a>
-							</li>
-						<?php endforeach ?>						
-					</ul>					
-				</li>
-				<li>
-					<a href="#">Vendors</a>
-					<ul class="sub">
-						<?php 
-							$vendors = get_terms('service', array(
-								'hide_empty' => false,
-							));
-						?>
-						<?php foreach ($vendors as $vendor): ?>
-							<li>
-								<a href="<?php echo flo_region_venue_permalink($state, $vendor->slug, 'services') ?>"><?php echo $vendor->name ?></a>
-							</li>
-						<?php endforeach ?>						
-					</ul>						
-				</li>					
-				<li>
-					<a href="<?php echo flo_region_events_permalink($state); ?>">Events</a>
-				</li>							
-			</ul>
-		</header>
+    <?php
 
-		<?php
+      flo_part('top-region');
+
 			$rargs = array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,

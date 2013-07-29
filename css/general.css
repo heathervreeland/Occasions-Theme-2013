@@ -1,3 +1,43 @@
+/* 
+ * Stylesheet for Occasionsonline.com
+ * 
+ * Index
+ *
+ * Reset styles
+ * Form Elements
+ * Clearfix
+ * Links
+ * Headers
+ * Text elements
+ * Wordpress Typo
+ * FlexSlider Necessary Styles
+ * Selections
+ * Buttons
+ * Wrappers
+ * Top Nav
+ * Header
+ * Main Nav
+ * Footer
+ * Content
+ * Layouts
+ * Blog
+ * Comments
+ * Top Categories
+ * Default Gallery
+ * Listings
+ * Widgets
+ * Global Elements
+ *   Advanced
+ *   Search Results Header 
+ * Pages
+ *   Homepage
+ *   Simple Page
+ *   Error Page
+ *   About Page and some Editorial Page
+ *   Single Venue Page
+ * Gravity Forms
+ * Google Custom Search
+ */
 .nobreak {
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
@@ -157,6 +197,9 @@ body,
 textarea,
 input {
   -webkit-text-size-adjust: none;
+}
+html {
+  font-size: 12px;
 }
 body {
   text-align: left;
@@ -1635,6 +1678,7 @@ input[type="button"] {
   margin-bottom: 24px;
   border-bottom: 1px solid #dadada;
 }
+.top-region h1,
 .page-title h2,
 .page-foot h2 {
   margin-bottom: 0;
@@ -1642,6 +1686,9 @@ input[type="button"] {
   line-height: 1;
   color: #acc178;
   text-transform: uppercase;
+}
+.top-region h1 {
+  margin-bottom: 20px;
 }
 .page-title hgroup h2,
 .page-foot hgroup h2,
@@ -1837,190 +1884,6 @@ input[type="button"] {
 }
 .pagination .extend {
   display: none;
-}
-/* Homepage
-*******************************/
-#homepage .featured {
-  min-height: 516px;
-  margin-bottom: 40px;
-  position: relative;
-}
-#homepage .featured .poster {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  width: 65%;
-}
-#homepage .featured .poster .wrap {
-  position: relative;
-  width: 100%;
-  height: 516px;
-}
-#homepage .featured .poster figure {
-  width: 100%;
-  height: 516px;
-  overflow: hidden;
-}
-#homepage .featured .poster figure img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-}
-#homepage .featured .poster .detail {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: auto;
-  background: #ffffff;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 18px;
-}
-#homepage .featured .poster .detail .category {
-  font: 700 13px 'Raleway', sans-serif;
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-#homepage .featured .poster .detail .category a {
-  color: #acc178;
-}
-#homepage .featured .poster .detail .category a:hover {
-  color: #2a2b2c;
-}
-#homepage .featured .poster .detail h2 {
-  font: 300 30px 'Oswald', sans-serif;
-  margin-bottom: 10px;
-}
-#homepage .featured .poster .detail h2 a {
-  color: #2a2b2c;
-}
-#homepage .featured .poster .detail h2 a:hover {
-  color: #747474;
-}
-#homepage .featured .poster .detail .descr {
-  margin-bottom: 0;
-  color: #747474;
-}
-#homepage .featured .poster .detail .descr p {
-  margin-bottom: 0;
-}
-#homepage .featured .arrows {
-  display: none;
-}
-#homepage .featured ul {
-  float: right;
-  width: 32%;
-}
-#homepage .featured ul li {
-  padding: 15px;
-  height: 55px;
-  border-bottom: 1px solid #ececec;
-  cursor: pointer;
-  position: relative;
-}
-#homepage .featured ul li:hover {
-  background: #edf8f7;
-  border-bottom-color: #edf8f7;
-}
-#homepage .featured ul li.active {
-  background: #d2f3f0;
-  border-bottom-color: #d2f3f0;
-}
-#homepage .featured ul li.active .arrow {
-  right: 100%;
-  border: solid transparent;
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: transparent;
-  border-right-color: #d2f3f0;
-  border-width: 10px;
-  top: 50%;
-  margin-top: -10px;
-}
-#homepage .featured ul li figure {
-  position: absolute;
-  float: left;
-  width: 48px;
-  height: 48px;
-  background: #747474;
-}
-#homepage .featured ul li figure img {
-  width: 48px;
-  height: 48px;
-}
-#homepage .featured ul li .detail {
-  float: right;
-  width: 120px;
-}
-#homepage .featured ul li .cat {
-  display: block;
-  font: 600 10px 'Raleway', sans-serif;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-bottom: 5px;
-}
-#homepage .featured ul li .cat a {
-  color: #acc178;
-}
-#homepage .featured ul li h3 {
-  font: 700 12px 'Raleway', sans-serif;
-  line-height: 1.1;
-  margin-bottom: 3px;
-}
-#homepage .featured ul li h3 a {
-  color: #2a2b2c;
-}
-#homepage .featured ul li time {
-  display: block;
-  color: #c1c1c1;
-  font: 400 11px 'Raleway', sans-serif;
-  margin-bottom: 5px;
-}
-#homepage .zone {
-  overflow: hidden;
-}
-#homepage .zone .spot {
-  margin-bottom: 30px;
-}
-#homepage .from-editor {
-  border-top: 0;
-}
-#homepage .from-editor h3 {
-  text-transform: uppercase;
-  font: 600 13px 'Raleway', sans-serif;
-  color: #acc178;
-  margin-bottom: 20px;
-}
-#homepage .from-editor h3 a {
-  color: #acc178;
-}
-#homepage .from-editor h3 a:hover {
-  color: #4fb5a5;
-}
-#homepage .from-editor article.post {
-  padding-top: 0;
-  padding-bottom: 24px;
-}
-#homepage .from-editor article.post:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border-bottom: 0;
-}
-.home article.post {
-  border-bottom: 1px solid #dadada;
-  margin-bottom:35px;
-}
-  .home article.post.last {
-    border-bottom:none;
-  }
-.home .featured-vendors {
-  border-bottom: 1px solid #dadada;
-  padding-bottom:35px;
-  margin-bottom:35px;
 }
 /* Blog
 *******************************/
@@ -3156,134 +3019,6 @@ article.attachment footer .next {
 .featured-vendors-large ul li .empty {
   min-height: 180px;
 }
-/* Simple Page
-*******************************/
-#page {
-  padding-bottom: 70px;
-}
-#page .page-title {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-/* Error Page
-*******************************/
-#page404 .page-title {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-#page404 .page-title h2 span {
-  font-weight: 300;
-}
-/* About Page and some Editorial Page
- * horiz-box-nav styles added by Ben Kaplan 5/31/13 - to add same box style of nav to Editorial page
-*******************************/
-#page-about {
-  padding-bottom: 70px;
-}
-#page-about .page-title {
-  padding-bottom: 0;
-  border-bottom: 0;
-  margin-bottom: 30px;
-}
-.horiz-box-nav nav ul li {
-  list-style:none;
-  text-align:center;
-  width:24%;
-  min-height:80px;
-}
-.page .horiz-box-nav nav ul li a {
-  text-decoration:none;
-}
-.horiz-box-nav nav,
-#page-about nav {
-  font: 700 12px 'Raleway', sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-.horiz-box-nav nav ul,
-#page-about nav ul {
-  float: left;
-  border: 1px solid #99d6d1;
-  border-right: 0;
-}
-.horiz-box-nav nav ul li,
-#page-about nav ul li {
-  float: left;
-  border-right: 1px solid #99d6d1;
-}
-.horiz-box-nav nav ul li a,
-#page-about nav ul li a {
-  color: #2a2b2c;
-  display: block;
-  padding: 8px 18px;
-}
-.horiz-box-nav nav ul li a:hover,
-#page-about nav ul li a:hover {
-  color: #4fb5a5;
-}
-.horiz-box-nav nav ul li.current a,
-#page-about nav ul li.current a {
-  color: #ffffff;
-  background: #4fb5a5;
-  position: relative;
-}
-.horiz-box-nav nav ul li.current a:after,
-#page-about nav ul li.current a:after {
-  top: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-top-color: #4fb5a5;
-  border-width: 8px;
-  left: 50%;
-  margin-left: -8px;
-}
-#page-about .contributors ul {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #dadada;
-  margin-bottom: 30px;
-}
-#page-about .contributors ul li {
-  float: left;
-  width: 205px;
-  margin: 0 22px 22px 0;
-}
-#page-about .contributors ul li:nth-child(3n) {
-  margin-right: 0;
-}
-#page-about .contributors ul li figure img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-}
-#page-about .contributors ul li .detail {
-  background: url(../img/post-author-box-bg.jpg) 0 0 repeat;
-  padding: 13px;
-}
-#page-about .contributors ul li .detail h3 {
-  color: #4fb5a5;
-  font: 700 15px 'Raleway', sans-serif;
-  line-height: 1.1;
-  margin-bottom: 4px;
-}
-#page-about .contributors ul li .detail .position {
-  line-height: 1.1;
-  color: #747474;
-}
-#page-about .contributors ul li .detail .links {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font: 600 11px 'Raleway', sans-serif;
-}
-#page-about .contributors ul li .detail .links a {
-  color: #2a2b2c;
-}
-#page-about .contributors ul li .detail .links a:hover {
-  color: #4fb5a5;
-}
 /* Widgets
 *******************************/
 #sidebar .hidden {
@@ -3619,8 +3354,12 @@ article.attachment footer .next {
 #sidebar .profile-control ul li.logout a:hover {
   color: #cc0000;
 }
-/* Advanced
-*******************************/
+
+/******************************
+ * Global Elements 
+ ******************************/
+
+/* Advanced */ 
 .share {
   text-align: left;
 }
@@ -3657,8 +3396,331 @@ article.attachment footer .next {
 .stars5 {
   background-position: 0 -100px;
 }
-/* Single Venue Page
-*******************************/
+
+/* Search Results Header ******************************/
+#wrapper .page-title.top-region h2 {
+  font-family: Arvo, sans-serif;
+  font-size: 12px; font-size: 1rem;
+  font-weight: 400;
+  color: #747474;
+  line-height: 1.2;
+  text-transform:none;
+  margin-bottom:15px;
+}
+
+/******************************
+ * Pages 
+ ******************************/
+/* Homepage */ 
+#homepage .featured {
+  min-height: 516px;
+  margin-bottom: 40px;
+  position: relative;
+}
+#homepage .featured .poster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 65%;
+}
+#homepage .featured .poster .wrap {
+  position: relative;
+  width: 100%;
+  height: 516px;
+}
+#homepage .featured .poster figure {
+  width: 100%;
+  height: 516px;
+  overflow: hidden;
+}
+#homepage .featured .poster figure img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+#homepage .featured .poster .detail {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+}
+#homepage .featured .poster .detail .category {
+  font: 700 13px 'Raleway', sans-serif;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#homepage .featured .poster .detail .category a {
+  color: #acc178;
+}
+#homepage .featured .poster .detail .category a:hover {
+  color: #2a2b2c;
+}
+#homepage .featured .poster .detail h2 {
+  font: 300 30px 'Oswald', sans-serif;
+  margin-bottom: 10px;
+}
+#homepage .featured .poster .detail h2 a {
+  color: #2a2b2c;
+}
+#homepage .featured .poster .detail h2 a:hover {
+  color: #747474;
+}
+#homepage .featured .poster .detail .descr {
+  margin-bottom: 0;
+  color: #747474;
+}
+#homepage .featured .poster .detail .descr p {
+  margin-bottom: 0;
+}
+#homepage .featured .arrows {
+  display: none;
+}
+#homepage .featured ul {
+  float: right;
+  width: 32%;
+}
+#homepage .featured ul li {
+  padding: 15px;
+  height: 55px;
+  border-bottom: 1px solid #ececec;
+  cursor: pointer;
+  position: relative;
+}
+#homepage .featured ul li:hover {
+  background: #edf8f7;
+  border-bottom-color: #edf8f7;
+}
+#homepage .featured ul li.active {
+  background: #d2f3f0;
+  border-bottom-color: #d2f3f0;
+}
+#homepage .featured ul li.active .arrow {
+  right: 100%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-right-color: #d2f3f0;
+  border-width: 10px;
+  top: 50%;
+  margin-top: -10px;
+}
+#homepage .featured ul li figure {
+  position: absolute;
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: #747474;
+}
+#homepage .featured ul li figure img {
+  width: 48px;
+  height: 48px;
+}
+#homepage .featured ul li .detail {
+  float: right;
+  width: 120px;
+}
+#homepage .featured ul li .cat {
+  display: block;
+  font: 600 10px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+#homepage .featured ul li .cat a {
+  color: #acc178;
+}
+#homepage .featured ul li h3 {
+  font: 700 12px 'Raleway', sans-serif;
+  line-height: 1.1;
+  margin-bottom: 3px;
+}
+#homepage .featured ul li h3 a {
+  color: #2a2b2c;
+}
+#homepage .featured ul li time {
+  display: block;
+  color: #c1c1c1;
+  font: 400 11px 'Raleway', sans-serif;
+  margin-bottom: 5px;
+}
+#homepage .zone {
+  overflow: hidden;
+}
+#homepage .zone .spot {
+  margin-bottom: 30px;
+}
+#homepage .from-editor {
+  border-top: 0;
+}
+#homepage .from-editor h3 {
+  text-transform: uppercase;
+  font: 600 13px 'Raleway', sans-serif;
+  color: #acc178;
+  margin-bottom: 20px;
+}
+#homepage .from-editor h3 a {
+  color: #acc178;
+}
+#homepage .from-editor h3 a:hover {
+  color: #4fb5a5;
+}
+#homepage .from-editor article.post {
+  padding-top: 0;
+  padding-bottom: 24px;
+}
+#homepage .from-editor article.post:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.home article.post {
+  border-bottom: 1px solid #dadada;
+  margin-bottom:35px;
+}
+  .home article.post.last {
+    border-bottom:none;
+  }
+.home .featured-vendors {
+  border-bottom: 1px solid #dadada;
+  padding-bottom:35px;
+  margin-bottom:35px;
+}
+/* Simple Page *******************************/
+#page {
+  padding-bottom: 70px;
+}
+#page .page-title {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+/* Error Page *******************************/
+#page404 .page-title {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+#page404 .page-title h2 span {
+  font-weight: 300;
+}
+/* About Page and some Editorial Page *******************************/
+/* horiz-box-nav styles added by Ben Kaplan 5/31/13 - to add same box style of nav to Editorial page */
+#page-about {
+  padding-bottom: 70px;
+}
+#page-about .page-title {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+.horiz-box-nav nav ul li {
+  list-style:none;
+  text-align:center;
+  width:24%;
+  min-height:80px;
+}
+.page .horiz-box-nav nav ul li a {
+  text-decoration:none;
+}
+.horiz-box-nav nav,
+#page-about nav {
+  font: 700 12px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.horiz-box-nav nav ul,
+#page-about nav ul {
+  float: left;
+  border: 1px solid #99d6d1;
+  border-right: 0;
+}
+.horiz-box-nav nav ul li,
+#page-about nav ul li {
+  float: left;
+  border-right: 1px solid #99d6d1;
+}
+.horiz-box-nav nav ul li a,
+#page-about nav ul li a {
+  color: #2a2b2c;
+  display: block;
+  padding: 8px 18px;
+}
+.horiz-box-nav nav ul li a:hover,
+#page-about nav ul li a:hover {
+  color: #4fb5a5;
+}
+.horiz-box-nav nav ul li.current a,
+#page-about nav ul li.current a {
+  color: #ffffff;
+  background: #4fb5a5;
+  position: relative;
+}
+.horiz-box-nav nav ul li.current a:after,
+#page-about nav ul li.current a:after {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #4fb5a5;
+  border-width: 8px;
+  left: 50%;
+  margin-left: -8px;
+}
+#page-about .contributors ul {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 30px;
+}
+#page-about .contributors ul li {
+  float: left;
+  width: 205px;
+  margin: 0 22px 22px 0;
+}
+#page-about .contributors ul li:nth-child(3n) {
+  margin-right: 0;
+}
+#page-about .contributors ul li figure img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+#page-about .contributors ul li .detail {
+  background: url(../img/post-author-box-bg.jpg) 0 0 repeat;
+  padding: 13px;
+}
+#page-about .contributors ul li .detail h3 {
+  color: #4fb5a5;
+  font: 700 15px 'Raleway', sans-serif;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+#page-about .contributors ul li .detail .position {
+  line-height: 1.1;
+  color: #747474;
+}
+#page-about .contributors ul li .detail .links {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font: 600 11px 'Raleway', sans-serif;
+}
+#page-about .contributors ul li .detail .links a {
+  color: #2a2b2c;
+}
+#page-about .contributors ul li .detail .links a:hover {
+  color: #4fb5a5;
+}
+
+/* Single Venue Page *******************************/
 .venue-title {
   border-bottom: 1px solid #dadada;
   padding: 40px 0;

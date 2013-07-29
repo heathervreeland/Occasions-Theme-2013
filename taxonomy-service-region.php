@@ -8,16 +8,6 @@
 
 		<?php flo_part('top-region'); ?>
 		
-<!-- 		<header class="page-title">
-			<hgroup>
-				<h2>Services</h2>
-				<span>&raquo;</span>
-				<h3><a href="<?php echo get_term_link($cat) ?>"><?php echo $cat->name ?></a></h3>
-				<span>&raquo;</span>
-				<h3><a href="<?php echo get_term_link($region) ?>"><?php echo $region->name ?></a></h3>
-			</hgroup>
-		</header>
- -->
 		<?php if ($cat): ?>
 			<?php if ($cat->description): ?>
 				<div class="story">

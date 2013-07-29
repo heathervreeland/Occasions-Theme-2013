@@ -1,37 +1,50 @@
 <?php
+/* 
+
+This file has some logic that tests to see if we are looking at an archive search of venues nationally or by State/City
+
+*/
 	if (substr_count($_SERVER['REQUEST_URI'], '/profile')) {
 		wp_redirect(site_url('/venues'));
 	}
 
 get_header(); ?>
 <?php 
+  // these term pulls are for if we are looking at a national search
+	$cat = get_term_by('slug', get_query_var('service'), 'service');
+  $cat_name = $cat->name;
 	$type = get_term_by('slug', get_query_var('venue-type'), 'venue-type');
 ?>
 <div id="main">
 	<div class="region-full">
+    <?php 
+      // logic to determine if we are looking at a national or state/city search
+			$region = get_term_by('slug', get_query_var('region'), 'region');
+      if ( $region ) :
 
-		<?php flo_part('top-region'); ?>
+        // if a state/city search, then show the top-region.php file
+        flo_part('top-region'); 
 
-		<?php $regions = flo_get_regions_links(false); ?>
-		<section class="regions">
-			<h3>View venues in </h3>
-			<ul>
-				<?php foreach ($regions as $state): ?>
-					<?php if(count($state->cities)) : ?>
-					<li class="region">
-						<h4><?php echo $state->name ?></h4>
-						<div class="cols">
-							<?php foreach ($state->cities as $city): ?>
-								<a href="<?php echo get_term_link($city); ?>" class="title"><?php echo $city->name ?></a>
-							<?php endforeach ?>
-						</div>
-					</li>
-					<?php endif; ?>
-				<?php endforeach ?>
-			</ul>
-		</section>
+      else:
 
-		<?php flo_part('featured-vendors-venue') ?>
+      // else show the national output
+    ?>
+		<header class="page-title top-region">
+			<hgroup>
+        <?php echo insert_venue_header_content(false); ?>
+			</hgroup>
+		</header>
+
+    <?php
+
+        flo_part('top-no-region'); 
+
+      endif; 
+
+      // back to normal output
+
+      flo_part('featured-vendors-venue') 
+    ?>
 
 		<section class="vendors-list">
 			<?php flo_part('venueshead') ?>

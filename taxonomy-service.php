@@ -5,11 +5,9 @@
 ?>
 <div id="main">
 	<div class="region-full">
-		<header class="page-title">
+		<header class="page-title top-region">
 			<hgroup>
-				<h2>Services</h2>
-				<span>&raquo;</span>
-				<h3><?php echo $cat_name ?></h3>
+        <?php echo insert_venue_header_content(false); ?>
 			</hgroup>
 		</header>
 
@@ -21,26 +19,7 @@
 			<?php endif ?>
 		<?php endif ?>
 
-		<?php $regions = flo_get_regions_links(false); ?>
-		<section class="regions">
-			<h3>View <?php echo $cat_name ?> in </h3>
-			<ul>
-				<?php foreach ($regions as $state): ?>
-					<?php if(count($state->cities)) : ?>
-					<li class="region">
-						<h4><?php echo $state->name ?></h4>
-						<div class="cols">
-							<ol>
-								<?php foreach ($state->cities as $city): ?>
-									<li><a href="<?php echo flo_region_venue_permalink($city, $cat->slug, 'services') ?>" class="title"><?php echo $city->name ?></a></li>
-								<?php endforeach ?>
-							</ol>
-						</div>
-					</li>
-					<?php endif; ?>
-				<?php endforeach ?>
-			</ul>
-		</section>
+		<?php flo_part('top-no-region'); ?>
 		
 		<?php flo_part('featured-vendors-service') ?>
 		
