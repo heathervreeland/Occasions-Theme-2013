@@ -801,6 +801,60 @@ input[type="button"] {
   line-height: 14px;
   min-height: 14px;
 }
+.follow {
+  margin-bottom: 20px;
+  float: right;
+}
+.follow span {
+  float: left;
+ /* width: 60px;*/
+  line-height:21px;
+}
+.follow ul {
+  float: left;
+}
+.follow ul li {
+  float: left;
+}
+.follow ul li a {
+  color:rgb(64,180,165);
+  line-height:21px;
+  text-align:center;
+  background-color:rgb(255,255,255);
+  border-radius:2px;
+  width: 24px;
+  height: 21px;
+  display: block;
+}
+.follow ul li a .icon-large {
+  font-size: 12px; font-size: 1rem;
+}
+/*
+.follow ul li a.fb {
+  background-position: 0 0;
+}
+.follow ul li a.fb:hover {
+  background-position: 0 bottom;
+}
+.follow ul li a.twi {
+  background-position: -30px 0;
+}
+.follow ul li a.twi:hover {
+  background-position: -30px bottom;
+}
+.follow ul li a.pin {
+  background-position: -59px 0;
+}
+.follow ul li a.pin:hover {
+  background-position: -59px bottom;
+}
+.follow ul li a.rss {
+  background-position: -88px 0;
+}
+.follow ul li a.rss:hover {
+  background-position: -88px bottom;
+}
+*/
 /* Wrappers
 *******************************/
 /* Top Nav
@@ -926,58 +980,20 @@ input[type="button"] {
   opacity: .8;
 }
 #nav-top .follow {
-  margin-bottom: 20px;
-  float: right;
+  margin-bottom:20px;
+  float:right;
 }
 #nav-top .follow span {
-  font: 300 13px 'Oswald', sans-serif;
-  text-transform: uppercase;
-  float: left;
-  width: 60px;
-  line-height: 22px;
 }
 #nav-top .follow ul {
   float: left;
 }
 #nav-top .follow ul li {
-  float: left;
-  margin-left: 6px;
   margin: 0;
   top: 5px;
 }
-#nav-top .follow ul li:after {
-  display: none;
-}
 #nav-top .follow ul li a {
-  width: 24px;
-  height: 21px;
-  display: block;
-  text-indent: -9999px;
-  background: url(../img/socials-header.png) 0 0 no-repeat;
-}
-#nav-top .follow ul li a.fb {
-  background-position: 0 0;
-}
-#nav-top .follow ul li a.fb:hover {
-  background-position: 0 bottom;
-}
-#nav-top .follow ul li a.twi {
-  background-position: -30px 0;
-}
-#nav-top .follow ul li a.twi:hover {
-  background-position: -30px bottom;
-}
-#nav-top .follow ul li a.pin {
-  background-position: -59px 0;
-}
-#nav-top .follow ul li a.pin:hover {
-  background-position: -59px bottom;
-}
-#nav-top .follow ul li a.rss {
-  background-position: -88px 0;
-}
-#nav-top .follow ul li a.rss:hover {
-  background-position: -88px bottom;
+  color:rgb(64,180,165);
 }
 #nav-top #search-form {
   height: 25px;
@@ -1560,54 +1576,17 @@ input[type="button"] {
   width: 120px;
 }
 #footer-main .follow {
-  margin-bottom: 20px;
   width: 300px;
   float: left;
 }
 #footer-main .follow span {
-  font: 300 13px 'Oswald', sans-serif;
-  text-transform: uppercase;
-  float: left;
-  width: 60px;
-  line-height: 22px;
 }
 #footer-main .follow ul {
-  float: left;
 }
 #footer-main .follow ul li {
-  float: left;
   margin-left: 6px;
 }
 #footer-main .follow ul li a {
-  width: 24px;
-  height: 21px;
-  display: block;
-  text-indent: -9999px;
-  background: url(../img/socials-footer.png) 0 0 no-repeat;
-}
-#footer-main .follow ul li a.fb {
-  background-position: 0 0;
-}
-#footer-main .follow ul li a.fb:hover {
-  background-position: 0 bottom;
-}
-#footer-main .follow ul li a.twi {
-  background-position: -30px 0;
-}
-#footer-main .follow ul li a.twi:hover {
-  background-position: -30px bottom;
-}
-#footer-main .follow ul li a.pin {
-  background-position: -59px 0;
-}
-#footer-main .follow ul li a.pin:hover {
-  background-position: -59px bottom;
-}
-#footer-main .follow ul li a.rss {
-  background-position: -88px 0;
-}
-#footer-main .follow ul li a.rss:hover {
-  background-position: -88px bottom;
 }
 #footer-main .copy {
   margin: 0;
@@ -1889,10 +1868,30 @@ input[type="button"] {
 *******************************/
 article.post,
 article.event {
+  border-bottom: 1px solid rgb(238,238,238);;
   padding-bottom: 24px;
-  border-bottom: 1px solid #dadada;
   margin-bottom: 24px;
-  color: #363839;
+}
+.archive article.post,
+.archive article.event {
+  border: 1px solid rgb(238,238,238);;
+
+  background-color: #ffffff;
+  background: url(img/gradient_peach-to-white_vertical.png);
+  background-repeat: repeat-x;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255,255,255)), to(rgb(255,235,214)));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, rgb(255,235,214), rgb(255,255,255), rgb(255,255,255));
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, rgb(255,235,214), rgb(255,255,255), rgb(255,255,255));
+  /* IE 10 */
+  background: -ms-linear-gradient(top, rgb(255,235,214), rgb(255,255,255), rgb(255,255,255));
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, rgb(255,235,214), rgb(255,255,255), rgb(255,255,255));
+
+  padding: 20px 10px;
+  margin-bottom: 24px;
 }
 .home article.post .title,
 article.post .preview .title,
@@ -1915,6 +1914,10 @@ article.event .listing-preview .title h2 {
   font: 300 30px 'Oswald', sans-serif;
   line-height: 1.1;
 }
+.archive article.post .listing-preview .title h2, 
+.archive article.post .listing-preview .title h2 a {
+  color:rgb(0,0,0);
+}
 .home article.post .title .meta,
 article.post .preview .title .meta,
 article.event .preview .title .meta,
@@ -1930,6 +1933,9 @@ article.event .listing-preview .by-author {
   position: absolute;
   left: -72px;
   top: 0;
+}
+article.post .listing-preview .title .meta time {
+  color:rgb(0,0,0);
 }
 article.post .preview .excerpt p,
 article.event .preview .excerpt p,
@@ -1967,6 +1973,17 @@ article.event .listing-preview .excerpt .more a {
   font: 700 11px 'Raleway', sans-serif;
   text-transform: uppercase;
   background: url(../img/arrow-more.png) 0 50% no-repeat;
+}
+.archive article.post .listing-preview .excerpt .more a {
+  font: 400 11px 'Raleway', sans-serif;
+  color:rgb(255,255,255);
+  background-image:none;
+  background-color:rgb(64,180,165);
+  padding:8px 20px;
+}
+.archive article.post .listing-preview .excerpt .more a:hover {
+  background-color: rgb(62,147,134); 
+  color:rgb(255,255,255);
 }
 article.post .preview .excerpt .more a:hover,
 article.event .preview .excerpt .more a:hover,
@@ -2094,6 +2111,52 @@ article.post .featured ul li .detail a,
 article.event .featured ul li .detail a {
   color: #2a2b2c;
 }
+/* post-listing.php */
+.archive article.post .listing-preview .excerpt {
+  position:relative;
+  padding-bottom:50px;
+}
+.archive article.post .listing-preview .excerpt .follow, 
+.archive article.post .listing-preview .excerpt .comments-link, 
+.archive article.post .listing-preview .excerpt .more {
+  position:absolute;
+  bottom:0;
+  right:50px;
+}
+.archive article.post .listing-preview .excerpt .follow {
+  left:0;
+  width:75%;
+  margin:0;
+}
+.archive article.post .share {
+  border:none; 
+  border-left: 0;
+  border-right: 0;
+  padding: 20px 0 0 0;
+  margin-bottom: 0px;
+}
+.archive article.post .listing-preview .excerpt .comments-link {
+  right:0;
+}
+.archive article.post .listing-preview .follow ul li {
+  margin-left:6px;
+}
+.archive article.post .listing-preview .follow ul li a {
+  color:rgb(255,255,255);
+  background-color:rgb(172,193,120);
+}
+.archive article.post .listing-preview .excerpt .follow .follow-label {
+  font-family: 'Raleway', sans-serif;
+  font-size:11px; font-size:.9rem;
+  text-transform:uppercase;
+}
+.comments-link {
+  background: url(../img/comment-bubble.png) 0 0 repeat;
+  display:block;
+  width:34px;
+  height:27px;
+}
+
 .blog-preview {
   border-top: 1px solid #dadada;
   margin-bottom: 40px;
@@ -3186,45 +3249,21 @@ article.attachment footer .next {
   margin-bottom: 30px;
 }
 #sidebar .follow span {
-  font: 300 13px 'Oswald', sans-serif;
-  text-transform: uppercase;
-  float: left;
-  width: 60px;
-  line-height: 22px;
 }
 #sidebar .follow ul {
-  float: left;
 }
 #sidebar .follow ul li {
-  float: left;
   margin-left: 6px;
 }
 #sidebar .follow ul li a {
+  color:rgb(255,255,255);
+  line-height:21px;
+  text-align:center;
+  background-color:rgb(64,180,165);
+  border-radius:2px;
   width: 24px;
-  height: 22px;
+  height: 21px;
   display: block;
-  text-indent: -9999px;
-  background: url(../img/icons-socials.png) 0 0 no-repeat;
-  -webkit-transition: opacity 200ms linear;
-  -moz-transition: opacity 200ms linear;
-  -ms-transition: opacity 200ms linear;
-  -o-transition: opacity 200ms linear;
-  transition: opacity 200ms linear;
-}
-#sidebar .follow ul li a:hover {
-  opacity: .8;
-}
-#sidebar .follow ul li a.fb {
-  background-position: 0 0;
-}
-#sidebar .follow ul li a.twi {
-  background-position: -30px 0;
-}
-#sidebar .follow ul li a.pin {
-  background-position: -59px 0;
-}
-#sidebar .follow ul li a.rss {
-  background-position: -88px 0;
 }
 #sidebar .follow #searchform {
   margin-top: -2px;

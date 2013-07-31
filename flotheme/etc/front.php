@@ -68,6 +68,10 @@ function flo_enqueue_styles() {
 
 	wp_register_style( 'arvo_font', 'http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic', array(), FLOTHEME_THEME_VERSION, 'all');
 	wp_enqueue_style('arvo_font');
+
+	wp_register_style( 'fontawsome', 'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', array(), FLOTHEME_THEME_VERSION, 'all');
+	wp_enqueue_style('fontawsome');
+
 	
 }
 add_action( 'wp_enqueue_scripts', 'flo_enqueue_styles' );

@@ -38,14 +38,9 @@
 						</ul>
 					</div>
 							
-					<div class="follow cf">
-						<ul>
-							<li><a href="<?php flo_option('fb');?>" rel="external" class="fb">Facebook</a></li>
-							<li><a href="http://twitter.com/#!/<?php flo_option('twi');?>" rel="external" class="twi">Twitter</a></li>
-							<li><a href="<?php flo_option('pin');?>" rel="external" class="pin">Pinterest</a></li>
-							<li><a href="<?php flo_rss();?>" class="rss">RSS</a></li>
-						</ul>
-					</div>					
+          <div class="follow cf">
+            <?php flo_part('social-media-icons') ?>
+          </div>
 				</nav>
 			</div>
 

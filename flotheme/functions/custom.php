@@ -231,7 +231,7 @@ function flo_get_region_events_permalink($city) {
 // Puts link in excerpts more tag
 function flo_excerpt_more($more) {
 	global $post;
-	return '<span class="more"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More...</a></span>';
+	return '<span class="more"><a class="moretag" href="'. get_permalink($post->ID) . '">Read More</a></span>';
 }
 add_filter('excerpt_more', 'flo_excerpt_more');
 
