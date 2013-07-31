@@ -1,7 +1,7 @@
 <section class="latest">
 	<ul class="cf">
 		<?php
-			$categories = get_weddings_top_categories();
+			$categories = get_parties_top_categories();
 		?>
 		<?php foreach ($categories as $cat): ?>
 			<?php 

@@ -600,7 +600,7 @@ function get_weddings_top_categories() {
 }
 
 function get_parties_top_categories() {
-	return flo_get_categories_by_slug(array('real-parties', 'real-mitzvahs', 'party-themes'));
+	return flo_get_categories_by_slug(array('birthday-party-ideas', 'themes-and-ideas', 'diy-and-tutorials'));
 }
 
 function get_entertaining_top_categories() {
