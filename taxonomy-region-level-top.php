@@ -41,9 +41,6 @@
 			<article <?php post_class(); ?> id="post-<?php the_ID()?>" data-post-id="<?php the_ID()?>">
 				<header class="preview">
 					<div class="title cf">
-						<span class="by-author">
-							<a href="<?php echo get_author_posts_url(get_the_author_ID()) ?>" rel="author"><?php echo get_avatar(get_the_author_meta('email'), 58 ); ?></a>
-						</span>
 						<h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title();?></a></h2>
 						<div class="meta">
 							Posted 
