@@ -1592,3 +1592,18 @@ if (!wp_next_scheduled('flo_cron_hook')) {
 	wp_schedule_event(time(), 'hours_2', 'flo_cron_hook');
 }
 add_action('flo_cron_hook', 'flo_check_upgraded_profiles');
+
+
+/* 
+ * attachment_image_link_remove_filter()
+ * filters out anchor tags around images that have been uploaded to a post
+ ******************************************/
+add_filter( 'the_content', 'attachment_image_link_remove_filter' );
+function attachment_image_link_remove_filter( $content ) {
+ $content =
+  preg_replace(array('{<a(.*?)(wp-att|wp-content/uploads)[^>]*><img}','{ wp-image-[0-9]*" /></a>}'),array('<img','" />'),$content);
+  return $content;
+}
+
+
+?>
