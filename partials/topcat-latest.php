@@ -1,7 +1,29 @@
 <section class="latest">
 	<ul class="cf">
 		<?php
-			$categories = get_parties_top_categories();
+      // get the current category ID
+      $cat_id = get_query_var('cat'); 
+
+      // pull the category object by the above ID
+      $current_category = get_term_by( 'id', $cat_id, 'category' );
+
+      // pull the category slug
+      $cat_slug = $current_category->slug;
+
+      // pulling specific categories found in flotheme/functions/custom.php
+      if ( $cat_slug == 'parties-and-celebrations' ) {
+
+        $categories = get_parties_top_categories();
+
+      } elseif  ( $cat_slug == 'entertaining-and-holidays' ) {
+
+        $categories = get_entertaining_top_categories();
+
+      } else {
+
+        $categories = get_weddings_top_categories();
+
+      }
 		?>
 		<?php foreach ($categories as $cat): ?>
 			<?php 
