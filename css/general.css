@@ -85,7 +85,7 @@
 }
 .btn-small {
   min-height: 12px;
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   font-weight: 400;
   line-height: 12px;
   padding: 4px 8px;
@@ -94,7 +94,7 @@
   padding: 6px 18px;
 }
 .btn-big {
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
   font-weight: 600;
   line-height: 13px;
   padding: 12px 18px;
@@ -199,15 +199,12 @@ input {
   -webkit-text-size-adjust: none;
 }
 html {
-  font-size: 12px;
+  font-size: 10px; font-size: 1.0rem;
 }
 body {
   text-align: left;
-  font-family: sans-serif;
-  font-size: 12px;
-  font-weight: normal;
   line-height: 1.2;
-  font: 400 12px 'Arvo', sans-serif;
+  font: 400 15px 'Arvo', sans-serif; font: 400 1.5rem 'Arvo', sans-serif;
 }
 /* Form Elements
 *******************************/
@@ -217,7 +214,7 @@ input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
   font-weight: 700;
   background: transparent;
   text-transform: uppercase;
@@ -327,22 +324,22 @@ h6 {
   margin-bottom: 1em;
 }
 h1 {
-  font-size: 28px;
+  font-size: 28px; font-size: 2.8rem;
 }
 h2 {
-  font-size: 22px;
+  font-size: 22px; font-size: 2.2rem;
 }
 h3 {
-  font-size: 18px;
+  font-size: 18px; font-size: 1.8rem;
 }
 h4 {
-  font-size: 14px;
+  font-size: 14px; font-size: 1.4rem;
 }
 h5 {
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
 }
 h6 {
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
 }
 /* Text elements
 *******************************/
@@ -361,7 +358,7 @@ img {
   border: 0;
 }
 .small {
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
 }
 hr {
   display: block;
@@ -424,22 +421,22 @@ hr {
   color: #4fb5a5;
 }
 .story h1 {
-  font-size: 28px;
+  font-size: 28px; font-size: 2.8rem;
 }
 .story h2 {
-  font-size: 24px;
+  font-size: 24px; font-size: 2.4rem;
 }
 .story h3 {
-  font-size: 20px;
+  font-size: 20px; font-size: 2.0rem;
 }
 .story h4 {
-  font-size: 16px;
+  font-size: 16px; font-size: 1.6rem;
 }
 .story h5 {
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
 }
 .story h6 {
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
 }
 .story a {
   -webkit-transition: color 100ms linear;
@@ -527,7 +524,7 @@ hr {
 }
 .story .wp-caption p.wp-caption-text {
   color: #888;
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
   margin: 0;
   padding: 5px;
 }
@@ -650,7 +647,7 @@ html[xmlns] .slides {
 }
 .btn-small {
   min-height: 12px;
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   font-weight: 400;
   line-height: 12px;
   padding: 4px 8px;
@@ -659,7 +656,7 @@ html[xmlns] .slides {
   padding: 6px 18px;
 }
 .btn-big {
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
   font-weight: 600;
   line-height: 13px;
   padding: 12px 18px;
@@ -744,7 +741,7 @@ a.btn.small,
 input[type="submit"].small,
 input[type="button"].small {
   min-height: 12px;
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   font-weight: 400;
   line-height: 12px;
   padding: 4px 8px;
@@ -753,7 +750,7 @@ button.big,
 a.btn.big,
 input[type="submit"].big,
 input[type="button"].big {
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
   font-weight: 600;
   line-height: 13px;
   padding: 12px 18px;
@@ -827,7 +824,7 @@ input[type="button"] {
   display: block;
 }
 .follow ul li a .icon-large {
-  font-size: 12px; font-size: 1rem;
+  font-size: 12px; font-size: 1.2rem; 
 }
 /*
 .follow ul li a.fb {
@@ -883,7 +880,7 @@ input[type="button"] {
   height: 33px;
   padding-right: 7px;
   margin-right: 6px;
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   text-transform: uppercase;
   position: relative;
 }
@@ -1004,7 +1001,7 @@ input[type="button"] {
 #nav-top #search-form label {
   float: left;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 0 15px 0 5px;
@@ -1071,7 +1068,7 @@ input[type="button"] {
     margin:40px 0 0 20px;
   }
     #head-main #subscribe-banner-head li {
-      margin-bottom:7px;
+      margin-bottom:4px;
     }
       #head-main #subscribe-banner-head li a {
         font: 700 12px 'Raleway', sans-serif;
@@ -1306,7 +1303,7 @@ input[type="button"] {
   color: #ffffff;
   background: #acc178;
   padding: 8px 16px;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
   font-weight: 400;
   text-transform: none;
 }
@@ -1350,7 +1347,7 @@ input[type="button"] {
   display: block;
   color: #c1c1c1;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
 }
 #nav-main > ul > li .submenu .featured ul li a:hover .title {
   color: #747474;
@@ -1591,7 +1588,7 @@ input[type="button"] {
 #footer-main .copy {
   margin: 0;
   line-height: 1.2;
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   color: #8e8e8e;
 }
 #footer-main .copy a {
@@ -1681,7 +1678,7 @@ input[type="button"] {
 }
 .page-title hgroup span,
 .page-foot hgroup span {
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
   line-height: 32px;
   padding: 0 8px;
   color: #747474;
@@ -1849,7 +1846,7 @@ input[type="button"] {
   text-align: center;
   margin: 0 1px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
 }
 .pagination .page {
   background: #f1f1f1;
@@ -2080,7 +2077,7 @@ article.event .featured {
 }
 article.post .featured h4,
 article.event .featured h4 {
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   text-transform: uppercase;
   font: 700 10px 'Raleway', sans-serif;
   color: #747474;
@@ -2147,7 +2144,7 @@ article.event .featured ul li .detail a {
 }
 .archive.category article.post .listing-preview .excerpt .follow .follow-label {
   font-family: 'Raleway', sans-serif;
-  font-size:11px; font-size:.9rem;
+  font-size: 11px; font-size: 1.1rem; 
   text-transform:uppercase;
 }
 .comments-link {
@@ -2464,7 +2461,7 @@ article.attachment footer .next {
 }
 .comment-form .description {
   color: #a7a7a7;
-  font: 400 12px 'Raleway', sans-serif;
+  font: 400 14px 'Raleway', sans-serif;
   margin-bottom: 28px;
 }
 .comment-form label {
@@ -2642,7 +2639,7 @@ article.attachment footer .next {
 #top-category .category-preview .listing ul li a .descr {
   display: block;
   color: #747474;
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
 }
 #top-category .category-preview .listing ul li.selected {
   border-bottom-color: #ffffff;
@@ -2876,7 +2873,7 @@ article.attachment footer .next {
   display: block;
   color: #c1c1c1;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
   -webkit-transition: color 100 linear;
   -moz-transition: color 100 linear;
   -ms-transition: color 100 linear;
@@ -2962,7 +2959,7 @@ article.attachment footer .next {
 .events .listing ul li a .descr {
   display: block;
   color: #747474;
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
 }
 .events .listing ul li.selected {
   border-bottom-color: #ffffff;
@@ -3040,6 +3037,7 @@ article.attachment footer .next {
 }
 .featured-vendors ul li a .title {
   display: block;
+  font-size: 12px; font-size: 1.2rem;
   text-align: center;
   padding: 12px;
 }
@@ -3165,7 +3163,7 @@ article.attachment footer .next {
 #sidebar .block.s-events ul li a .descr {
   display: block;
   color: #747474;
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
 }
 #sidebar .block.s-events ul li:hover {
   border-bottom-color: #ffffff;
@@ -3312,7 +3310,7 @@ article.attachment footer .next {
 #sidebar .letter a .title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
 }
 #sidebar .letter a .descr {
   color: #2a2b2c;
@@ -3353,7 +3351,7 @@ article.attachment footer .next {
 #sidebar .Cart66CartWidget #Cart66WidgetViewCart,
 #sidebar .Cart66CartWidget #Cart66WidgetCheckout {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
 }
 #sidebar .profile-control {
   padding-bottom: 15px;
@@ -3439,7 +3437,7 @@ article.attachment footer .next {
 /* Search Results Header ******************************/
 #wrapper .page-title.top-region h2 {
   font-family: Arvo, sans-serif;
-  font-size: 12px; font-size: 1rem;
+  font-size: 12px; font-size: 1.2rem; 
   font-weight: 400;
   color: #747474;
   line-height: 1.2;
@@ -3516,6 +3514,10 @@ article.attachment footer .next {
 }
 #homepage .featured .poster .detail .descr p {
   margin-bottom: 0;
+}
+#homepage .featured .poster .detail .descr p span.more {
+	font-size: 12px; font-size: 1.2rem;
+	padding-left: 5px;
 }
 #homepage .featured .arrows {
   display: none;
@@ -4152,7 +4154,7 @@ article.attachment footer .next {
   margin-right: 0;
 }
 .reviews .recaptcha-error {
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
   font: 400 13px 'Raleway', sans-serif;
   color: #cc0000;
 }
@@ -5169,7 +5171,7 @@ article.attachment footer .next {
 }
 .b-events .tab h3 span {
   color: #747474;
-  font-size: 16px;
+  font-size: 16px; font-size: 1.6rem;
 }
 #main .ngg-galleryoverview {
   display: block !important;
@@ -5243,7 +5245,7 @@ article.attachment footer .next {
 #main.leads ul .lead dl dd {
   float: left;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
 }
 #main .b-events article.event {
   margin-bottom: 30px;
@@ -5269,7 +5271,7 @@ article.attachment footer .next {
   margin-bottom: .5em;
 }
 #main .b-events article.event h2 span {
-  font-size: 18px;
+  font-size: 18px; font-size: 1.8rem;
   text-transform: lowercase;
 }
 #main .b-events article.event h2 span.remove a {
@@ -5299,7 +5301,7 @@ article.attachment footer .next {
 #main .b-events article.event dl dd {
   float: left;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
   width: 300px;
 }
 #advertisers {
@@ -5443,7 +5445,7 @@ article.attachment footer .next {
 }
 #advertisers .b-profile .gallery ul li.main .set-main {
   cursor: default;
-  font-size: 9px;
+  font-size: 9px; font-size: .9rem;
   font-weight: 400;
   color: #a7a7a7;
 }
@@ -5466,7 +5468,7 @@ article.attachment footer .next {
   color: #747474;
 }
 #advertisers .b-profile fieldset .checkboxes label {
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
   text-transform: none;
 }
 #advertisers .b-profile fieldset .select,
@@ -5491,7 +5493,7 @@ article.attachment footer .next {
   margin-bottom: 0;
 }
 #advertisers .b-events ul li h2 span {
-  font-size: 18px;
+  font-size: 18px; font-size: 1.8rem;
   text-transform: lowercase;
 }
 #advertisers .b-events ul li h2 span.remove a {
@@ -5521,7 +5523,7 @@ article.attachment footer .next {
 #advertisers .b-events ul li dl dd {
   float: left;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
 }
 #advertisers .upgrade {
   margin-bottom: 70px;
@@ -5529,7 +5531,7 @@ article.attachment footer .next {
 #advertisers .upgrade .notes {
   background: #def2f0;
   padding: 20px;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
 }
 /* Gravity Forms
 *******************************/
@@ -5571,7 +5573,7 @@ article.attachment footer .next {
 #main .gform_wrapper textarea {
   padding: 5px;
   color: #2a2b2c;
-  font-size: 12px;
+  font-size: 12px; font-size: 1.2rem;
 }
 #main .gform_wrapper .gfield_error input[type="text"],
 #main .gform_wrapper .gfield_error input[type="url"],
@@ -5609,14 +5611,14 @@ article.attachment footer .next {
   vertical-align: middle;
 }
 #main .gform_wrapper .chzn-container-single {
-  font-size: 11px;
+  font-size: 11px; font-size: 1.1rem;
 }
 #main .gform_wrapper .chzn-container-single .chzn-search {
   display: none;
 }
 #main #gforms_confirmation_message {
   text-align: center;
-  font-size: 14px;
+  font-size: 14px; font-size: 1.4rem;
   background: #f9f9f9;
   border: 1px solid #f4f4f4;
   color: #2a2b2c;
@@ -5645,8 +5647,9 @@ article.attachment footer .next {
 }
 #main.search .gsc-table-result tbody > tr .gs-title b,
 #main.search .gsc-table-result tbody > tr .gs-title strong {
-  font: 200 30px 'Oswald', sans-serif;
-  font-size: 30px !important;
+  font: 200 30px 'Oswald', sans-serif; 
+  font: 200 3.0rem 'Oswald', sans-serif;
+  font-size: 30px !important; font-size: 3.0rem !important;
 }
 #main.search .gsc-table-result tbody > tr .gs-snippet {
   color: #363839;
@@ -5677,7 +5680,7 @@ article.attachment footer .next {
   background: none;
 }
 #main.search .gsc-result-info {
-  font-size: 10px;
+  font-size: 10px; font-size: 1.0rem;
   text-align: right;
 }
 #main.search .gcsc-branding {
@@ -5709,7 +5712,7 @@ article.attachment footer .next {
 #buy-featured-placement .active-placements li dl dd {
   float: left;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 13px; font-size: 1.3rem;
 }
 #expo .page-title {
   padding-bottom: 0;
@@ -5837,7 +5840,7 @@ article.attachment footer .next {
     margin-right: 10px;
   }
   #nav-main > ul > li > a {
-    font-size: 13px;
+    font-size: 13px; font-size: 1.3rem;
   }
   #head-main {
     max-width: 660px;
@@ -6031,7 +6034,7 @@ article.attachment footer .next {
   }
   #homepage .featured .poster .detail .descr p {
     text-align: center;
-    font-size: 13px;
+    font-size: 13px; font-size: 1.3rem;
   }
   #homepage .featured .poster .detail .descr a {
     color: #fff;
@@ -6164,7 +6167,7 @@ article.attachment footer .next {
     display: none;
   }
   .page-title h2 {
-    font-size: 24px;
+    font-size: 24px; font-size: 2.4rem;
     text-align: center;
   }
   .page-title hgroup {
@@ -6183,10 +6186,10 @@ article.attachment footer .next {
     line-height: 30px;
   }
   .page-title hgroup h2 {
-    font-size: 24px;
+    font-size: 24px; font-size: 2.4rem;
   }
   .page-title hgroup h3 {
-    font-size: 29px;
+    font-size: 29px; font-size: 2.9rem;
   }
   .page-title,
   .page-foot {
@@ -6244,7 +6247,7 @@ article.attachment footer .next {
   article.post .listing-preview .title h2,
   article.event .listing-preview .title h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 24px; font-size: 2.4rem;
   }
   article.post .preview .meta,
   article.event .preview .meta,
@@ -6350,7 +6353,7 @@ article.attachment footer .next {
   }
   .region-full .events h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 20px; font-size: 2.0rem;
   }
   .region-full .events .image {
     display: none;
@@ -6477,7 +6480,7 @@ article.attachment footer .next {
   .vendors-list .list ul li .detail h2 {
     float: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 24px; font-size: 2.4rem;
     width: auto;
     margin: 0 0 10px 0;
   }
@@ -6523,7 +6526,7 @@ article.attachment footer .next {
     width: auto;
   }
   .issues ul li .detail h2 {
-    font-size: 20px;
+    font-size: 20px; font-size: 2.0rem;
   }
   .horiz-box-nav nav ul,
   #expo nav ul,
@@ -6610,7 +6613,7 @@ article.attachment footer .next {
     padding: 30px 20px;
   }
   .venue-full .information .tab h3 {
-    font-size: 18px;
+    font-size: 18px; font-size: 1.8rem;
   }
   #venue-mobile-sidebar .short-info figure {
     margin-right: 0;
@@ -6622,7 +6625,7 @@ article.attachment footer .next {
     width: 75%;
   }
   #venue-mobile-sidebar .short-info .detail h2 {
-    font-size: 22px;
+    font-size: 22px; font-size: 2.2rem;
   }
   .reviews {
     margin-bottom: 0;
@@ -6631,7 +6634,7 @@ article.attachment footer .next {
     margin-bottom: 20px;
   }
   .review-list ol li header cite {
-    font-size: 14px;
+    font-size: 14px; font-size: 1.4rem;
     font-weight: 500px;
   }
 }
@@ -6680,7 +6683,7 @@ html > body .ui-pnotify {
   text-align: center;
   font: 400 12px 'Oswald', sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 14px; font-size: 1.4rem;
 }
 .ui-pnotify-text {
   display: block;
