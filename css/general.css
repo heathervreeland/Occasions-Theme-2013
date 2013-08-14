@@ -199,7 +199,7 @@ input {
   -webkit-text-size-adjust: none;
 }
 html {
-  font-size: 10px; font-size: 1.0rem;
+  font-size: 10px; 
 }
 body {
   text-align: left;
@@ -857,7 +857,7 @@ input[type="button"] {
 /* Top Nav
 *******************************/
 .nav-top-wrapper {
-  background: url(../img/nav-top-bg.gif) 0 0 repeat-x;
+  background: url(../img/gray-stripe.png) 0 0 repeat;
 }
 #nav-top {
   margin-bottom: 44px;
