@@ -204,7 +204,7 @@ html {
 body {
   text-align: left;
   line-height: 1.2;
-  font: 400 15px 'Arvo', sans-serif; font: 400 1.5rem 'Arvo', sans-serif;
+  font: 400 15px 'Raleway', sans-serif; font: 400 1.5rem 'Raleway', sans-serif;
 }
 /* Form Elements
 *******************************/
@@ -857,7 +857,7 @@ input[type="button"] {
 /* Top Nav
 *******************************/
 .nav-top-wrapper {
-  background: url(../img/gray-stripe.png) 0 0 repeat;
+  background: url(../img/nav-top-bg.png) 0 0 repeat-x;
 }
 #nav-top {
   margin-bottom: 44px;
@@ -923,7 +923,7 @@ input[type="button"] {
   height: 33px;
   line-height: 33px;
   padding: 0 20px;
-  background: #acc178;
+  background: #4fb5a5;
   color: #fff;
   margin-right: 10px;
   position: relative;
@@ -944,7 +944,7 @@ input[type="button"] {
   opacity: 0;
   width: 100%;
   z-index: 111;
-  background: #acc178;
+  background: #4fb5a5;
   position: absolute;
   top: 33px;
   left: 0;
@@ -989,6 +989,10 @@ input[type="button"] {
   margin: 0;
   top: 5px;
 }
+#nav-top .follow ul li:after {
+  background: transparent;
+}
+
 #nav-top .follow ul li a {
   color:rgb(64,180,165);
 }
@@ -1000,7 +1004,7 @@ input[type="button"] {
 }
 #nav-top #search-form label {
   float: left;
-  color: #ffffff;
+  color: #2a2b2c;
   font-size: 10px; font-size: 1.0rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2455,13 +2459,22 @@ article.attachment footer .next {
   line-height: 30px;
 }
 .comment-form h3 {
-  color: #acc178;
+ 	background: url(../img/gray-stripe.png) 0 0 repeat;
+  color: #2a2b2c;
   font: 300 21px 'Oswald', sans-serif;
+  margin-top: 15px;
   margin-bottom: 15px;
+  padding: 12px;
+}
+.comment-form h3:before {
+	content: url(../img/comment-bubble.png);
+	position: relative;
+	top: 5px;
+	margin-right: 5px;
 }
 .comment-form .description {
   color: #a7a7a7;
-  font: 400 14px 'Raleway', sans-serif;
+  font: 400 12px 'Raleway', sans-serif;
   margin-bottom: 28px;
 }
 .comment-form label {
@@ -2470,27 +2483,45 @@ article.attachment footer .next {
   line-height: 1.1;
   height: 16px;
   text-transform: uppercase;
-  color: #8e8e8e;
+  color: #4fb5a5;
+}
+.comment-form .comment-subscription-form label {
+	color: #8e8e8e;
+}
+.comment-form input[type=text],
+.comment-form input[type=email],
+.comment-form input[type=url],
+.comment-form textarea {
+  font-size: 14px;
+  background: #f1f1f2;
+	border: 0;
+	padding: 5px;
+}
+.comment-form .area1 {
+	float: left;
+	width: 48%;
 }
 .comment-form .area1 p {
   margin-bottom: 14px;
   float: left;
-  width: 32%;
+  width: 100%;
   margin-right: 2%;
 }
 .comment-form .area1 p:last-child {
   margin-right: 0;
 }
 .comment-form .area2 {
+  float: right;
+  width: 48%;
   margin-bottom: 14px;
 }
 .comment-form .area2 textarea {
-  height: 100px;
+  height: 152px;
 }
 .comment-form .area3 {
+  float: left;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #dadada;
 }
 .comment-form .area3 p {
   margin: 0;
@@ -2506,6 +2537,15 @@ article.attachment footer .next {
 }
 .comment-form .area3 label.opt span {
   vertical-align: middle;
+}
+.comment-form .submit {
+	text-align: right;
+	width: 100%;
+}
+.comment-form .button {
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 /* Top Categories
 *******************************/
@@ -3037,6 +3077,7 @@ article.attachment footer .next {
 }
 .featured-vendors ul li a .title {
   display: block;
+  font-family: 'Arvo', sans-serif;
   font-size: 12px; font-size: 1.2rem;
   text-align: center;
   padding: 12px;
@@ -3437,10 +3478,10 @@ article.attachment footer .next {
 /* Search Results Header ******************************/
 #wrapper .page-title.top-region h2 {
   font-family: Arvo, sans-serif;
-  font-size: 12px; font-size: 1.2rem; 
+  font-size: 14px; font-size: 1.4rem; 
   font-weight: 400;
   color: #747474;
-  line-height: 1.2;
+  line-height: 1.4;
   text-transform:none;
   margin-bottom:15px;
 }
@@ -4138,20 +4179,31 @@ article.attachment footer .next {
   margin-bottom: 70px;
 }
 .reviews h3 {
-  font: 600 12px 'Raleway', sans-serif;
-  color: #acc178;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+ 	background: url(../img/gray-stripe.png) 0 0 repeat;
+  color: #2a2b2c;
+  font: 300 21px 'Oswald', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+.reviews h3:before {
+	content: url(../img/comment-bubble.png);
+	position: relative;
+	top: 5px;
+	margin-right: 5px;
 }
 .reviews .respond {
   display: none;
 }
 .reviews .area1 p {
-  width: 49%;
+  width: 100%;
   margin-right: 2%;
 }
 .reviews .area1 p:last-child {
   margin-right: 0;
+}
+.reviews .comment-form .area2 textarea {
+	height: 212px;
 }
 .reviews .recaptcha-error {
   font-size: 12px; font-size: 1.2rem;
@@ -4757,6 +4809,7 @@ article.attachment footer .next {
 .vendors-list .list ul li .detail .descr {
   color: #747474;
   font-style: italic;
+  line-height: 1.4;
   margin-bottom: 12px;
 }
 .vendors-list .list ul li .detail .more {
