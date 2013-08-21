@@ -33,7 +33,7 @@
 
 		<?php $issues_query = new WP_Query(array(
 			'post_type' 		=> 'issue',
-			'order'				=> 'ASC',
+			'order'				=> 'DESC',
 			'orderby'			=> 'rank',
 			'posts_per_page' 	=> -1,
 		)); ?>
