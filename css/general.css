@@ -5269,7 +5269,7 @@ article.attachment footer .next {
   display: block;
   position: absolute;
   right: 15px;
-  bottom: 15px;
+  top: 15px;
   width: 30px;
   height: 30px;
   -webkit-transition: all 0.2s ease-in-out;
