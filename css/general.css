@@ -24,6 +24,7 @@
  * Comments
  * Top Categories
  * Default Gallery
+ * Tile Galleries from Jetpack
  * Listings
  * Widgets
  * Global Elements
@@ -2859,6 +2860,12 @@ article.attachment footer .next {
   float: right;
   right: -12px;
 }
+/* Tile Galleries from Jetpack
+*******************************/
+.tiled-gallery.type-rectangular {
+  margin-bottom:10px; margin-bottom:1rem;
+}
+
 /* Listings
 *******************************/
 .latest {
