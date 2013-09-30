@@ -7,7 +7,7 @@
 	<div class="title cf">
     <? // commented out by Ben Kaplan 5/31/13 - removed gravatar from display ?>
 		<!--span class="by-author">
-			<a href="<?php echo get_author_posts_url(get_the_author_ID()) ?>" rel="author"><?php echo get_avatar(get_the_author_meta('email'), 58 ); ?></a>
+			<a href="<?php //echo get_author_posts_url(get_the_author_ID()) ?>" rel="author"><?php //echo get_avatar(get_the_author_meta('email'), 58 ); ?></a>
 		</span-->
 		<h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title();?></a></h2>
 		<div class="meta">

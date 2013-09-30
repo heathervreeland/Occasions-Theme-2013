@@ -22,8 +22,12 @@ get_header(); ?>
 			$region = get_term_by('slug', get_query_var('region'), 'region');
       if ( $region ) :
 
-        // if a state/city search, then show the top-region.php file
-        flo_part('top-region'); 
+        // if a state/city search, then show the venue header content 
+
+        echo '<header class="page-title top-region">';
+        echo insert_venue_header_content();
+        echo '</header>';
+
 
       else:
 

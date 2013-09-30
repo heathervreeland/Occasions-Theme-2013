@@ -1,23 +1,23 @@
 <aside id="sidebar" class="region-sidebar">
-	<?php flo_part('side-top-ad') ?>
+  <?php
 
-	<?php 
-		$region = get_term_by('slug', get_query_var('region'), 'region');
-		if ($region->parent) {
-			$state = get_term($region->parent, 'region');
-		} else {
-			$state = $region;
-			$region = false;
-		}
-	?>
-	
-	<?php 
-		$venues = get_terms('venue-type', array(
-			'hide_empty' => false,
-		));
-	?>
+	flo_part('side-top-ad');
 
-	<?php if (count($venues) && $region) : ?>
+  $region = get_term_by('slug', get_query_var('region'), 'region');
+  if ($region->parent) {
+    $state = get_term($region->parent, 'region');
+  } else {
+    $state = $region;
+    $region = false;
+  }
+
+  $venues = get_terms('venue-type', array(
+    'hide_empty' => false,
+  ));
+
+  if (count($venues) && $region) : 
+
+  ?>
 	<div class="block services">
 		<h3 class="a">Venues in <?php echo $region->name ?></h3>
 		<ul>
@@ -49,8 +49,8 @@
 			'ignore_filter_changes'	=> true,
 			'norewrite'			=> true,
 		));
-	?>
-	<?php if ($cat_query->have_posts()) : ?>	
+	  if ($cat_query->have_posts()) : 
+  ?>	
 	<div class="block s-events">
 		<h3 class="a">Events in <?php echo $region->name ?></h3>
 		<ul>
@@ -73,10 +73,10 @@
 		</ul>
 		<!-- <a href="<?php flo_region_events_permalink($region); ?>" class="goto">View All</a> -->
 	</div>
-	<?php endif; ?>
-
-	
 	<?php 
+
+    endif;
+	
 		$services = get_terms('service', array(
 			'hide_empty' => false,
 		));

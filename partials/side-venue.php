@@ -24,6 +24,11 @@
             </p>
           <?php endif ?>
         <?php endfor;?>
+        <?php if (flo_get_meta('contact_email') ) { ?>
+        Email:
+        <a href="mailto:<?php flo_meta('contact_email'); ?>" target="_blank"><?php flo_meta('contact_email'); ?></a>
+        <p></p>
+        <?php } ?>
         <a href="<?php flo_meta('website'); ?>" target="_blank">View Website</a>
 				</address>
 			<?php endif ?>

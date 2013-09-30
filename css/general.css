@@ -17,6 +17,8 @@
  * Top Nav
  * Header
  * Main Nav
+ * Secondary Nav
+ * Left Fixed Nav
  * Footer
  * Content
  * Layouts
@@ -494,6 +496,7 @@ hr {
   /* Override height to match resized width for correct aspect ratio. */
 
 }
+.alignleft,
 .story .alignleft,
 .story img.alignleft {
   display: inline;
@@ -1041,6 +1044,11 @@ input[type="button"] {
   display: block;
   font: 0/0 sans-serif;
 }
+#nav-top .mediakit-link {
+  line-height:33px;
+  float:right;
+  padding:0 20px;
+}
 /* Header
 *******************************/
 #head-main {
@@ -1476,6 +1484,111 @@ input[type="button"] {
 #nav-main .select-wrapper ul li:hover {
   color: #4fb5a5;
 }
+/* Secondary Nav
+*******************************/
+.nav-secondary-wrapper {
+  background:url('../img/bg_secondary-nav.png') 0 0 repeat-x;
+  border-bottom:2px solid rgb(248,248,248);
+  height:36px;
+  margin:-3px 0 0 0;
+}
+  .nav-secondary-wrapper .page-title {
+    max-width: 990px;
+    width: 98%;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
+  .nav-secondary-wrapper .page-title h1,
+  .nav-secondary-wrapper .page-title h2.description {
+    display:none;
+  }
+
+/* Left Fixed Nav
+*******************************/
+#fixed-left-nav {
+  float:left;
+  width:200px;
+  margin:-35px 0 0 -240px;
+  display:block;
+}
+  #fixed-left-nav.no-secondary {
+    margin:0 0 0 -240px;
+  }
+  #fixed-left-nav h3 {
+    display:none;
+  }
+  #fixed-left-nav .nav-upper { 
+    background:url('../img/img_nav_bookmark.png') 0 0 no-repeat;
+    min-height:119px;
+    padding:18px 0 20px 0;
+  }
+  #fixed-left-nav .nav-upper h1, 
+  #fixed-left-nav .nav-upper h2,
+  #fixed-left-nav .nav-upper h4,
+  #fixed-left-nav .regions ul li h4 { 
+    text-align:center;
+    margin:0;
+    padding:0;
+  }
+  #fixed-left-nav .nav-upper h1 { 
+    font-family: 'Oswald', sans-serif;
+    font-size:32px; font-size:3.2rem;
+    font-weight:normal;
+    color: rgb(36,180,166);
+    line-height:1;
+    text-transform:uppercase;
+    margin:0 0 8px 0;
+  }
+  #fixed-left-nav .nav-upper h2 { 
+    font-family:'Raleway', sans-serif;
+    font-size:13px; font-size:1.3rem;
+    font-weight:bold;
+    line-height:1.2;
+  }
+  #fixed-left-nav .regions ul li h4 { 
+    font-family: 'Libre Baskerville', serif;
+    font-size:19px; font-size:1.9rem;
+    font-weight:400;
+    font-style:italic;
+    color:rgb(255,255,255);
+    line-height:34px;
+    background:url('../img/bg_nav_left_header_ribbon.png') 0 0 no-repeat;
+    height:38px;
+  }
+  #fixed-left-nav .regions ul li .cols { 
+    border-left: 1px solid rgb(229,229,229);
+    margin:-4px 0 0 7px;
+  }
+  #fixed-left-nav .regions ul li ol { 
+    padding-bottom:20px;
+  }
+    #fixed-left-nav .regions > ul > li:last-child ol { 
+      padding-bottom:0;
+    }
+  #fixed-left-nav .regions ul li ol li { 
+    text-align:center;
+    background-color:rgb(236,250,249);
+    margin:3px 0 0 0;
+    padding:10px 0;
+  }
+    #fixed-left-nav .regions ul li ol li.gradient1 { 
+      background-color:rgb(208,242,240);
+    }
+    #fixed-left-nav .regions ul li ol li.gradient2 { 
+      background-color:rgb(217,244,243);
+    }
+    #fixed-left-nav .regions ul li ol li.gradient3 { 
+      background-color:rgb(226,247,246);
+    }
+  #fixed-left-nav .regions ul li ol li a { 
+    font-family:'Raleway', sans-serif;
+    font-size:11px; font-size:1.1rem;
+    font-weight:bold;
+    color:rgb(0,0,0);
+    line-height:1.2;
+    text-transform:uppercase;
+  }
 /* Footer
 *******************************/
 .footer-main-wrapper {
@@ -1660,6 +1773,7 @@ input[type="button"] {
   border-bottom: 1px solid #dadada;
 }
 .top-region h1,
+.page-title h1,
 .page-title h2,
 .page-foot h2 {
   margin-bottom: 0;
@@ -1907,6 +2021,7 @@ article.event .listing-preview .title {
   margin-bottom: 18px;
   position: relative;
 }
+#main.search article h2,
 .home article.post .title h2,
 article.post .preview .title h2,
 article.event .preview .title h2,
@@ -1932,9 +2047,14 @@ article.post .preview .by-author,
 article.event .preview .by-author,
 article.post .listing-preview .by-author,
 article.event .listing-preview .by-author {
+  /*
   position: absolute;
   left: -72px;
   top: 0;
+  */
+  position: relative;
+  float: left;
+  margin-right: 10px;
 }
 article.post .listing-preview .title .meta time {
   color:rgb(0,0,0);
@@ -3497,6 +3617,8 @@ article.attachment footer .next {
  * Pages 
  ******************************/
 /* Homepage */ 
+
+
 #homepage .featured {
   min-height: 516px;
   margin-bottom: 40px;
@@ -3678,11 +3800,44 @@ article.attachment footer .next {
   .home article.post.last {
     border-bottom:none;
   }
-.home .featured-vendors {
+.home .home-insert {
   border-bottom: 1px solid #dadada;
   padding-bottom:35px;
   margin-bottom:35px;
 }
+.home .featured-vendors {
+  margin-bottom:35px;
+}
+.home .latest-blog-posts {
+  clear:both;
+  margin:20px 0;
+  width:100%;
+}
+  .home .latest-blog-posts h4 {
+    font: 700 12px 'Raleway', sans-serif;
+    text-transform:uppercase;
+  }
+  .home .latest-blog-posts article {
+    text-align:center;
+    float:left;
+    width:30%;
+    margin-right:2.5%;
+  }
+  .home .latest-blog-posts article.last {
+    margin-right:0;
+  }
+    .home .latest-blog-posts article figure {
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      margin-bottom:20px;
+    }
+      .home .latest-blog-posts article figure img {
+        padding:2.5%;
+        max-width:95%;
+      }
+
+
 /* Simple Page *******************************/
 #page {
   padding-bottom: 70px;
@@ -4462,16 +4617,32 @@ article.attachment footer .next {
   column-rule-style: none;
   column-rule-width: 0;
 }
+.nav-secondary-wrapper .page-title > ul > li { }
+
+.nav-secondary-wrapper .page-title > ul, 
 .region-full .page-title > ul {
   font-size: 0;
 }
+.nav-secondary-wrapper .page-title > ul > li, 
 .region-full .page-title > ul > li {
   width: 20%;
   position: relative;
 }
+  .nav-secondary-wrapper .page-title > ul > li {
+    width:auto;
+    min-width:125px;
+  }
+  .nav-secondary-wrapper .page-title > ul > li {
+    background:url('../img/img_divider_secondary-nav.png') 0 0 no-repeat;
+  }
+  .nav-secondary-wrapper .page-title > ul > li.head {
+    background:none;
+  }
+.nav-secondary-wrapper .page-title > ul > li:hover .sub, 
 .region-full .page-title > ul > li:hover .sub {
   display: block;
 }
+.nav-secondary-wrapper .page-title > ul > li .sub, 
 .region-full .page-title > ul > li .sub {
   display: none;
   position: absolute;
@@ -4483,30 +4654,41 @@ article.attachment footer .next {
   background: #fff;
   z-index: 111;
 }
+  .nav-secondary-wrapper .page-title > ul > li .sub { 
+    border:1px solid rgb(233, 233, 233);
+    left:0;
+  }
+.nav-secondary-wrapper .page-title > ul > li .sub .top, 
 .region-full .page-title > ul > li .sub .top {
   text-transform: uppercase;
   letter-spacing: .5px;
 }
+.nav-secondary-wrapper .page-title > ul > li .sub .top a, 
 .region-full .page-title > ul > li .sub .top a {
   color: #4fb5a5;
 }
+.nav-secondary-wrapper .page-title > ul > li .sub .top a:hover,
 .region-full .page-title > ul > li .sub .top a:hover {
   color: #4fb5a5;
 }
+.nav-secondary-wrapper .page-title > ul > li .sub li, 
 .region-full .page-title > ul > li .sub li {
   width: 100%;
   border: none;
   height: auto;
   line-height: 1.5em;
 }
+.nav-secondary-wrapper .page-title > ul > li .sub li a, 
 .region-full .page-title > ul > li .sub li a {
   height: auto;
   line-height: 1.5em;
-  padding: .5em 1em;
+  padding: .25rem 1rem;
 }
+.nav-secondary-wrapper .page-title > ul > li .sub li a:hover,
 .region-full .page-title > ul > li .sub li a:hover {
   color: #acc178;
 }
+.nav-secondary-wrapper .page-title li, 
 .region-full .page-title li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4523,6 +4705,10 @@ article.attachment footer .next {
   text-align: center;
   font-size: 0;
 }
+  .nav-secondary-wrapper .page-title li {
+    border:none;
+  }
+.nav-secondary-wrapper .page-title li a,
 .region-full .page-title li a {
   font: 400 21px Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
   font: 600 12px 'Raleway', sans-serif;
@@ -4530,6 +4716,7 @@ article.attachment footer .next {
   line-height: 33px;
   display: block;
 }
+.nav-secondary-wrapper .page-title li.head, 
 .region-full .page-title li.head {
   background: #4fb5a5;
   color: #ffffff;
@@ -4539,11 +4726,17 @@ article.attachment footer .next {
   position: relative;
   padding-right: 22px;
 }
+  .nav-secondary-wrapper .page-title li.head {
+    color: rgb(36,180,166);
+    background: transparent;
+  }
+.nav-secondary-wrapper .page-title li.head span, 
 .region-full .page-title li.head span {
   position: relative;
   z-index: 111;
   white-space: nowrap;
 }
+.nav-secondary-wrapper .page-title li.head:before, 
 .region-full .page-title li.head:before {
   content: "";
   display: block;
@@ -4554,9 +4747,13 @@ article.attachment footer .next {
   height: 40px;
   background: url(../img/bg-header.png) 0 0 no-repeat transparent;
 }
+  .nav-secondary-wrapper .page-title li.head:before {
+    display:none;
+  }
 .region-full {
   margin-bottom: 70px;
 }
+.nav-secondary-wrapper .page-title, 
 .region-full .page-title {
   border-bottom: 0;
   padding-bottom: 0;
@@ -5684,8 +5881,38 @@ article.attachment footer .next {
   color: #2a2b2c;
   padding: 20px;
 }
+/* Custom Search and 
 /* Google Custom Search
 *******************************/
+#main.search {}
+  #main.search .results {
+    margin-bottom:30px;
+    padding-bottom:30px;
+  }
+  #main.search .vendor.results {
+    border-bottom: 1px solid #dadada;
+  }
+  #main.search article {
+    clear:both;
+    margin:20px 0;
+  }
+  #main.search .search-more {
+    text-align:right;
+    width:100%;
+    margin:20px 0;
+  }
+  #main.search article img {
+    max-width:150px;
+    height:auto;
+  }
+  #main.search h2.results-title {
+    font-size: 24px; font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font: 400 24px 'Oswald', sans-serif;
+    color: #4fb5a5;
+  }
+
 #main.search .gsc-control-cse .gsc-search-box .gsc-search-button input {
   color: #fff;
 }

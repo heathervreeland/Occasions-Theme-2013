@@ -18,7 +18,9 @@
 	<div id="region" class="region-full region-level-top" data-place="<?php echo $state->name ?>">
     <?php
 
-      flo_part('top-region');
+      echo '<header class="page-title top-region">';
+      echo insert_venue_header_content();
+      echo '</header>';
 
 			$rargs = array(
 				'post_type' => 'post',

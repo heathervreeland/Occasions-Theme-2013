@@ -4,7 +4,7 @@
 	$region = get_term_by('slug', get_query_var('region'), 'region');
 	flo_vendor_profile_view();
 ?>
-<header class="venue-title cf">
+<header class="venue-title ">
 	<?php /*
 	<a href="" class="back">Back to search results</a>
 	*/?>

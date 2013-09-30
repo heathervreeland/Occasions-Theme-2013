@@ -52,8 +52,24 @@ function flo_after_setup_theme() {
 	if (function_exists('flotheme_get_post_formats')) {
 		add_theme_support('post-formats', flotheme_get_post_formats());
 	}
+
+/*
+*/
+  add_theme_support( 'infinite-scroll', array(
+    'type'           => 'scroll',
+    'footer_widgets' => false,
+    'container'      => 'homepage',
+    'footer'         => false,
+    'wrapper'        => true,
+    'render'         => false, 
+    'posts_per_page' => '5' 
+  ) );
 }
 add_action('after_setup_theme', 'flo_after_setup_theme');
+
+function insert_flo_home_loop() {
+    flo_part('post-full');
+}
 
 /**
  * Initialize Theme Navigation 

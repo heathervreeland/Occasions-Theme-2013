@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <div id="main">
 	<div class="region-full">
-	<?php flo_part('top-region'); ?>
+    <header class="page-title top-region">
+      <?php echo insert_venue_header_content(); ?>
+    </header>
 	</div>
 
 	<!-- <header class="page-title page-title-container cf">

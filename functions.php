@@ -12,6 +12,18 @@ if ( STYLESHEETPATH == TEMPLATEPATH ) {
 }
 
 require_once FLOTHEME_PATH . '/init.php';
+function SearchFilter($query) {
+  if ($query->is_search && !is_admin()) {
+    if (isset($query->query["post_type"])) {
+      $query->set('post_type', $query->query["post_type"]);
+    } else {
+      $query->set('post_type', 'product');
+    }
+  }
+  return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
+
 
 /****************************************************************
  * You can add your functions here.

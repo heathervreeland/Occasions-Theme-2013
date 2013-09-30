@@ -37,10 +37,12 @@
 							<?php endforeach; ?>							
 						</ul>
 					</div>
+
 							
           <div class="follow cf">
             <?php flo_part('social-media-icons') ?>
           </div>
+          <div class="mediakit-link"><a href="http://mediakit.occasionsonline.com/">ADVERTISE</a></div>
 				</nav>
 			</div>
 
@@ -88,6 +90,11 @@
 				</div>
 			</div>
 			<?php flo_part('nav-main') ?>
+      
+      <?php show_secondary_nav(); ?>
+      
 		</header>
 		<div class="content-main-wrapper">
 		<div id="content-main" role="main" class="cf w">
+
+      <?php show_fixed_left_nav(); ?>
