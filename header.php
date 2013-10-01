@@ -97,4 +97,4 @@
 		<div class="content-main-wrapper">
 		<div id="content-main" role="main" class="cf w">
 
-      <?php show_fixed_left_nav(); ?>
+      <?php //show_fixed_left_nav(); ?>
