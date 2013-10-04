@@ -1513,7 +1513,8 @@ input[type="button"] {
   display:block;
 }
   #fixed-left-nav.no-secondary {
-    margin:0 0 0 -240px;
+    margin:-4px 0 0 -240px;
+    -webkit-margin-before:0px;
   }
   #fixed-left-nav h3 {
     display:none;
@@ -1752,6 +1753,11 @@ input[type="button"] {
   -moz-box-shadow: 0 2px 4px #dddddd;
   box-shadow: 0 2px 4px #dddddd;
 }
+.content-inner-wrap {
+  float:right;
+  width:100%;
+}
+
 #main {
   float: left;
   max-width: 660px;
@@ -3800,6 +3806,7 @@ article.attachment footer .next {
   .home article.post.last {
     border-bottom:none;
   }
+.index-insert,
 .home .home-insert {
   border-bottom: 1px solid #dadada;
   padding-bottom:35px;
@@ -3808,30 +3815,37 @@ article.attachment footer .next {
 .home .featured-vendors {
   margin-bottom:35px;
 }
+.index-insert.latest-blog-posts,
 .home .latest-blog-posts {
   clear:both;
   margin:20px 0;
   width:100%;
 }
+  .index-insert.latest-blog-posts h4,
   .home .latest-blog-posts h4 {
     font: 700 12px 'Raleway', sans-serif;
     text-transform:uppercase;
   }
+
+  .index-insert.latest-blog-posts article,
   .home .latest-blog-posts article {
     text-align:center;
     float:left;
     width:30%;
     margin-right:2.5%;
   }
+  .index-insert.latest-blog-posts article.last,
   .home .latest-blog-posts article.last {
     margin-right:0;
   }
+    .index-insert.latest-blog-posts article figure,
     .home .latest-blog-posts article figure {
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       margin-bottom:20px;
     }
+      .index-insert.latest-blog-posts article figure img,
       .home .latest-blog-posts article figure img {
         padding:2.5%;
         max-width:95%;
@@ -5977,6 +5991,8 @@ article.attachment footer .next {
   padding: 40px 0;
 }
 #galleries .coming-soon {
+  display:block;
+  width:990px;
   height: 715px;
   background: url(../img/galleries-coming-soon.jpg) 50% 0 no-repeat;
 }
@@ -6112,6 +6128,12 @@ article.attachment footer .next {
     margin: 0 auto;
     padding-bottom: 40px;
   }
+  #fixed-left-nav {
+    display:none;
+  }
+  .content-inner-wrap {
+    float:none;
+  }
   #nav-main > ul {
     text-align: center;
     margin: 0 auto;
@@ -6129,6 +6151,7 @@ article.attachment footer .next {
   #nav-main > ul > li > a {
     font-size: 13px; font-size: 1.3rem;
   }
+  #galleries .coming-soon,
   #head-main {
     max-width: 660px;
   }
@@ -6167,6 +6190,7 @@ article.attachment footer .next {
   }
 }
 @media (max-width: 767px) {
+  #galleries .coming-soon,
   .w {
     width: 300px;
   }

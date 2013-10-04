@@ -1,3 +1,5 @@
+      </div><!-- /content-inner-wrap -->
+      <?php show_fixed_left_nav(); ?>
 		</div><!-- /#content -->
 	</div>
 	<div id="responsive-footer">

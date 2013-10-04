@@ -6,7 +6,9 @@
 <div id="main">
 	<div class="region-full">
 
-		<?php flo_part('top-region'); ?>
+    <header class="page-title top-region">
+      <?php echo insert_venue_header_content(); ?>
+    </header>
 		
 		<?php if ($cat): ?>
 			<?php if ($cat->description): ?>

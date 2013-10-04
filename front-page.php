@@ -23,23 +23,10 @@ get_header();
 
     //flo_part('post-full');
     get_template_part( 'content', 'home' );
+  
+    insert_snippet($i);
 
-    if ( $i == 1 ) {
-
-      flo_part('featured-vendors-home'); 
-
-    } elseif ( $i == 2 ) {
-
-      flo_part('latest-blog-posts-home-insert'); 
-
-    } elseif ( $i == 3 ) {
-
-      flo_part('subscribe-home-insert'); 
-      $i = 0;
-
-    }
     $i++;
-
   endwhile; endif; 
   $i = 1;
 

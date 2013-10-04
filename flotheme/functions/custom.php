@@ -107,16 +107,23 @@ add_filter('pre_get_posts', 'flo_query_post_types');
 
 function flo_add_rewrite_rules() {
 	global $wp_rewrite;
-
+//vardump($wp_rewrite->preg_index(2)); 
 	$new_rules = array(
+    //'local/([\w\d\-]+)/([\w\d\-]+)/services/?$'=>'index.php?post_type=venue&term-name=service&region=' . $wp_rewrite->preg_index(2), //dded by jhaun@handbrewed.com - 9/30/2013
 		'local/([\w\d\-]+)/([\w\d\-]+)/services/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3),
 		'local/([\w\d\-]+)/([\w\d\-]+)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
+
+    //'local/([\w\d\-]+)/services/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1), //dded by jhaun@handbrewed.com - 9/30/2013
 
 		'local/([\w\d\-]+)/services/([\w\d\-]+)/?$' 								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
 		'local/([\w\d\-]+)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 				=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
 
+    //'local/([\w\d\-]+)/([\w\d\-]+)/venues/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2), //dded by jhaun@handbrewed.com - 9/30/2013
 		'local/([\w\d\-]+)/([\w\d\-]+)/venues/([\w\d\-]+)/?$'   					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&venue-type=' . $wp_rewrite->preg_index(3),
 		'local/([\w\d\-]+)/([\w\d\-]+)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 		=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&venue-type=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
+
+    //'local/([\w\d\-]+)/venues/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1), //this line and next one added by jhaun@handbrewed.com - 9/30/2013
+    'local/([\w\d\-]+)/venues/page/([0-9]{1,})/?$'          => 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . '&paged=' . $wp_rewrite->preg_index(2),
 
 		'local/([\w\d\-]+)/venues/([\w\d\-]+)/?$'   								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2),
 		'local/([\w\d\-]+)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),

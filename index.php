@@ -72,6 +72,15 @@
 
         flo_part('post-listing');
 
+        if ( ( $i % 3 ) == 0 ) {
+
+          $n = 5;
+
+          insert_snippet($n);
+
+        }
+        $i++;
+
       }
       ?>
 		<?php endwhile; else: ?>

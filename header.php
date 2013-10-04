@@ -1,4 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html <?php language_attributes('html'); ?> class="no-js ie ie6 oldie" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 7 ]><html <?php language_attributes('html'); ?> class="no-js ie ie7 oldie" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8 ]><html <?php language_attributes('html'); ?> class="no-js ie ie8 oldie" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 9 ]><html <?php language_attributes('html'); ?> class="no-js ie ie9" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 9 ]><html <?php language_attributes('html'); ?> class="no-js ie" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><![endif]-->
+<!--[if !IE ]><!--> <html <?php language_attributes('html'); ?> class="no-js" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"> <!--<![endif]-->
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -97,4 +103,4 @@
 		<div class="content-main-wrapper">
 		<div id="content-main" role="main" class="cf w">
 
-      <?php //show_fixed_left_nav(); ?>
+      <div class="content-inner-wrap cf">
