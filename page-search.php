@@ -49,16 +49,27 @@ if ( $posts->have_posts() ) :
     echo "<p>No Vendors were found</p>";
     wp_reset_postdata();
   endif;
-
   ?>
 
 </section>
 <section class="blog-search results">
 <h2 class="results-title">Posts</h2>
 <?php
-  //posts
-  $s = isset($_GET["q"]) ? $_GET["q"] : ""; 
-  $posts = new WP_Query("s=$s&post_type=post&posts_per_page=10");
+  $s = '';
+  if ( isset($_GET["q"] ) ) {
+    $s = $_GET["q"];
+  } else {
+  echo 'sorry, no results';
+  }
+  //echo $s;
+  $args = array(
+    's' => $s,
+    'post_type' => 'post',
+    'posts_per_page' => 10
+  );
+  $posts = new WP_Query( $args );
+  //$posts = new WP_Query("s=$s&post_type=post&posts_per_page=10");
+
   $num = $posts->found_posts?$posts->found_posts:"0";
   echo "<h3>We found ".$num." articles matching your search.</h3>";
   if ( $posts->have_posts() ) :
@@ -85,6 +96,7 @@ if ( $posts->have_posts() ) :
   echo "<p>No Posts were found</p>";
     wp_reset_postdata();              
   endif;
+
 ?>
 </section>
   <?php /* <!-- Put the following javascript before the closing </head> tag. -->
