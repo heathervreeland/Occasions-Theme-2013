@@ -57,7 +57,7 @@
 				</header>				
 				<section class="story cf">
 					<?php if ($_REQUEST['nggpage'] == '') : ?>
-						<?php add_filter('the_content','flo_wrap_image_credits'); ?>
+						<?php add_filter('the_content','flo_wrap_image_credits', 20); ?>
 						<?php the_content(); ?>
 						<?php remove_filter('the_content','flo_wrap_image_credits'); ?>
 					<?php else: ?>
