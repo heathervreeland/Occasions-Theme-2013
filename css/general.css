@@ -5482,12 +5482,15 @@ article.attachment footer .next {
   position: relative;
 }
 
+#main section .image:hover .pinit,
 #main section.blog .excerpt .image:hover .pinit,
 #main section.blog .story .image:hover .pinit,
 #main section.recent .excerpt .image:hover .pinit,
 #main section.recent .story .image:hover .pinit {
   opacity: 1;
 }
+
+#main section .image .pinit,
 #main section.blog .excerpt .image .pinit,
 #main section.blog .story .image .pinit,
 #main section.recent .excerpt .image .pinit,
