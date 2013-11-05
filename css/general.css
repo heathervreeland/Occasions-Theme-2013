@@ -5467,22 +5467,31 @@ article.attachment footer .next {
   margin: 0 auto;
 }
 #main section.blog .excerpt img,
-#main section.blog .story img {
+#main section.blog .story img,
+#main section.recent .excerpt img,
+#main section.recent .story img {
   max-width: 100%;
   width: auto;
   height: auto;
 }
 #main section.blog .excerpt .image,
-#main section.blog .story .image {
+#main section.blog .story .image,
+#main section.recent .excerpt .image,
+#main section.recent .story .image {
   text-align: center;
   position: relative;
 }
+
 #main section.blog .excerpt .image:hover .pinit,
-#main section.blog .story .image:hover .pinit {
+#main section.blog .story .image:hover .pinit,
+#main section.recent .excerpt .image:hover .pinit,
+#main section.recent .story .image:hover .pinit {
   opacity: 1;
 }
 #main section.blog .excerpt .image .pinit,
-#main section.blog .story .image .pinit {
+#main section.blog .story .image .pinit,
+#main section.recent .excerpt .image .pinit,
+#main section.recent .story .image .pinit {
   opacity: 0;
   display: block;
   position: absolute;
