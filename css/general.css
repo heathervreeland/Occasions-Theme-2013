@@ -5462,6 +5462,9 @@ article.attachment footer .next {
 #main .ngg-galleryoverview .ngg-navigation a {
   text-decoration: none;
 }
+#main section .image {
+	position: relative;
+}
 #main section.blog .excerpt,
 #main section.blog .story {
   margin: 0 auto;
