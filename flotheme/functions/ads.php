@@ -5,10 +5,16 @@ function flo_adrotate_block($block_slug, $tax = 0, $tax2 = 0, $block_count = 6) 
 	if($block_slug) {
 		$now = current_time('timestamp');
 		$prefix = $wpdb->prefix;
-		
+				
 		// Get all ads in all groups and process them in an array
-		$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM `".$prefix."adrotate` WHERE `type` = 'active' AND `show_type` = %s AND `show_tax`=%d AND `show_tax2`=%d", $block_slug, $tax, $tax2));
 
+		if($block_slug == "venue")
+		{
+			$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM `".$prefix."adrotate` WHERE `type` = 'active' AND `show_type` = %s AND `show_tax` IS NOT NULL AND `show_tax2`=%d", $block_slug, $tax, $tax2));
+		}
+		else {
+			$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM `".$prefix."adrotate` WHERE `type` = 'active' AND `show_type` = %s AND `show_tax`=%d AND `show_tax2`=%d", $block_slug, $tax, $tax2));
+		}
 		if($results) {
 			foreach($results as $result) {
 				$selected[$result->id] = $result->weight;

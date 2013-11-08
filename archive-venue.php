@@ -27,7 +27,9 @@ get_header(); ?>
         echo '<header class="page-title top-region">';
         echo insert_venue_header_content();
         echo '</header>';
-
+		
+		
+      	flo_part('featured-vendors-local-venue'); 
 
       else:
 
@@ -42,12 +44,14 @@ get_header(); ?>
     <?php
 
         flo_part('top-no-region'); 
-
+		
+		
+	    flo_part('featured-vendors-venue');
+		
       endif; 
 
       // back to normal output
 
-      flo_part('featured-vendors-venue') 
     ?>
 
 		<section class="vendors-list">

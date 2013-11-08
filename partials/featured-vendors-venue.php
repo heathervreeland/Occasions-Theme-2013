@@ -7,5 +7,5 @@
 	<?php 
 			$region = get_term_by('slug', $region, 'region');
 	 ?>
-	<?php echo flo_adrotate_block('local-venue', $region->term_id, $type->term_id, 4); ?>
+	<?php echo flo_adrotate_block('venue', $type->term_id, 0, 4); ?>
 </section>
