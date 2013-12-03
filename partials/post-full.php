@@ -32,5 +32,5 @@
 
 			</article>
 
-      <?php flo_part('featured-vendors-home') ?>
+      <?php //flo_part('featured-vendors-home') ?>
 
