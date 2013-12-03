@@ -3,7 +3,8 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div id="subscribe">
 		<?php flo_page_title(get_the_title()) ?>
-
+		<?php // Remove annual for now 
+/*
 		<section class="annual">
 			<figure>
 				<?php the_post_thumbnail('full') ?>
@@ -31,6 +32,8 @@
 			</div>
 		</section>
 
+ */
+?>
 		<?php $issues_query = new WP_Query(array(
 			'post_type' 		=> 'issue',
 			'order'				=> 'DESC',
