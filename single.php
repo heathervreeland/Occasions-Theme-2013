@@ -23,7 +23,7 @@
 					'after'	 => '</p></section>',
 				)) ?>
 				<?php flo_part('share-this-post') ?>
-				<?php flo_part('featured-vendors-home') ?>
+				<?php //flo_part('featured-vendors-home') ?>
 				<?php comments_template(); ?>
 			</article>
 		</section>

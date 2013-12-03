@@ -41,7 +41,7 @@
 			</ul>
 		</section>
 
-		<?php flo_part('featured-vendors-venue') ?>
+		<?php //flo_part('featured-vendors-venue') ?>
 
 		<section class="vendors-list">
 			<?php flo_part('venueshead') ?>

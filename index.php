@@ -61,7 +61,7 @@
         if ( $i != $posts_per_page ) {
 
           // if we are not on the last post display of the page
-          flo_part('featured-vendors-home');
+          //flo_part('featured-vendors-home');
 
         }
 

@@ -23,7 +23,7 @@
 			<?php endif ?>
 		<?php endif ?>
 
-		<?php flo_part('featured-vendors-local-venue') ?>
+		<?php //flo_part('featured-vendors-local-venue') ?>
 
 		<section class="vendors-list">
 			<?php flo_part('venueshead') ?>

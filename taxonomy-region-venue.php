@@ -20,7 +20,7 @@
 
 		<?php flo_part('featured-big') ?>
 		
-		<?php flo_part('featured-vendors-local-service') ?>
+		<?php //flo_part('featured-vendors-local-service') ?>
 
 		<section class="vendors-list">
 			<?php flo_part('venueshead') ?>

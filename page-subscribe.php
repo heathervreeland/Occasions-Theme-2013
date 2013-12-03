@@ -78,7 +78,7 @@
 			</section>
 		<?php endif ?>
 
-		<?php flo_part('featured-vendors') ?>
+		<?php //flo_part('featured-vendors') ?>
 
 	</div>
 <?php endwhile; else: ?>

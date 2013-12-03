@@ -56,7 +56,7 @@ Template Name: Vendors
 				<?php endforeach ?>
 			</ul>
 		</section>
-		<?php flo_part('featured-vendors') ?>
+		<?php //flo_part('featured-vendors') ?>
 	</div>
 <?php endwhile; endif; ?>
 </div>

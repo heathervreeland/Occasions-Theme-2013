@@ -29,7 +29,7 @@ get_header(); ?>
         echo '</header>';
 		
 		
-      	flo_part('featured-vendors-local-venue'); 
+      	//flo_part('featured-vendors-local-venue'); 
 
       else:
 
@@ -46,7 +46,7 @@ get_header(); ?>
         flo_part('top-no-region'); 
 		
 		
-	    flo_part('featured-vendors-venue');
+	    //flo_part('featured-vendors-venue');
 		
       endif; 
 
