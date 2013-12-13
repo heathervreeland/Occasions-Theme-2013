@@ -807,7 +807,7 @@ function flotheme_get_taxonomies() {
 				'sort'			=> true,
 				'hierarchical' 	=> true,
 				'args'			=> array('orderby' => 'term_order'),
-				'rewrite'		=> array('slug' => 'local', 'with_front' => false, 'hierarchical' => true),
+				'rewrite'		=> array('slug' => '', 'with_front' => false, 'hierarchical' => true),
 			),
 			'singular'	=> 'Region',
 			'multiple'	=> 'Regions',

@@ -109,44 +109,56 @@ function flo_add_rewrite_rules() {
 	global $wp_rewrite;
 //vardump($wp_rewrite->preg_index(2)); 
 	$new_rules = array(
+		'(florida|georgia)/?$' 					=> 'index.php?post_type=post&region=' . $wp_rewrite->preg_index(1) . '&paged=' . $wp_rewrite->preg_index(2),
+	
+	'(florida|georgia)/([\w\d\-]+)/?$' 					=> 'index.php?post_type=post&region=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
+	
     //'local/([\w\d\-]+)/([\w\d\-]+)/services/?$'=>'index.php?post_type=venue&term-name=service&region=' . $wp_rewrite->preg_index(2), //dded by jhaun@handbrewed.com - 9/30/2013
-		'local/([\w\d\-]+)/([\w\d\-]+)/services/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3),
-		'local/([\w\d\-]+)/([\w\d\-]+)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
+		'(florida|georgia)/services/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
+		'(florida|georgia)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(4),
 
     //'local/([\w\d\-]+)/services/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1), //dded by jhaun@handbrewed.com - 9/30/2013
 
-		'local/([\w\d\-]+)/services/([\w\d\-]+)/?$' 								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
-		'local/([\w\d\-]+)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 				=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
+		'services/([\w\d\-]+)/?$' 								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(0) . '&service=' . $wp_rewrite->preg_index(1),
+		'services/([\w\d\-]+)/page/([0-9]{1,})/?$' 				=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(0) . '&service=' . $wp_rewrite->preg_index(1) . '&paged=' . $wp_rewrite->preg_index(2),
 
     //'local/([\w\d\-]+)/([\w\d\-]+)/venues/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2), //dded by jhaun@handbrewed.com - 9/30/2013
-		'local/([\w\d\-]+)/([\w\d\-]+)/venues/([\w\d\-]+)/?$'   					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&venue-type=' . $wp_rewrite->preg_index(3),
-		'local/([\w\d\-]+)/([\w\d\-]+)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 		=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&venue-type=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
+		'(florida|georgia)/venues/([\w\d\-]+)/?$'   					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2),
+		'(florida|georgia)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 		=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
+
+
+		'(florida|georgia)/([\w\d\-]+)/venues/([\w\d\-]+)/?$'   					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&venue-type=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/([\w\d\-]+)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 		=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&venue-type=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
+
+		'(florida|georgia)/([\w\d\-]+)/services/([\w\d\-]+)/?$'   					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&&service=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/([\w\d\-]+)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 		=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&&service=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
 
     //'local/([\w\d\-]+)/venues/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1), //this line and next one added by jhaun@handbrewed.com - 9/30/2013
-    'local/([\w\d\-]+)/venues/page/([0-9]{1,})/?$'          => 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . '&paged=' . $wp_rewrite->preg_index(2),
+    '(florida|georgia)/venues/page/([0-9]{1,})/?$'          => 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . '&paged=' . $wp_rewrite->preg_index(2),
 
-		'local/([\w\d\-]+)/venues/([\w\d\-]+)/?$'   								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2),
-		'local/([\w\d\-]+)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/venues/([\w\d\-]+)/?$'   								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2),
+		'(florida|georgia)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
 
-		'local/([\w\d\-]+)/([\w\d\-]+)/events/?$'					   				=> 'index.php?post_type=event' . '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1',
-		'local/([\w\d\-]+)/([\w\d\-]+)/events/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=event&paged=' . $wp_rewrite->preg_index(3) . '&region=' . $wp_rewrite->preg_index(2) . '&norewrite=1', // . '&type=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/([\w\d\-]+)/events/?$'					   				=> 'index.php?post_type=event' . '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1',
+		'(florida|georgia)/([\w\d\-]+)/events/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=event&paged=' . $wp_rewrite->preg_index(3) . '&region=' . $wp_rewrite->preg_index(2) . '&norewrite=1', // . '&type=' . $wp_rewrite->preg_index(3),
 
-		'local/([\w\d\-]+)/events/?$'					   							=> 'index.php?post_type=event'. '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1',
-		'local/([\w\d\-]+)/events/page/([0-9]{1,})/?$' 								=> 'index.php?post_type=event&paged=' . $wp_rewrite->preg_index(2) . '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1', // . '&type=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/events/?$'					   							=> 'index.php?post_type=event'. '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1',
+		'(florida|georgia)/events/page/([0-9]{1,})/?$' 								=> 'index.php?post_type=event&paged=' . $wp_rewrite->preg_index(2) . '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1', // . '&type=' . $wp_rewrite->preg_index(3),
 
-		'local/([\w\d\-]+)/([\w\d\-]+)/cat/([\w\d\-]+)/?$'					   		=> 'index.php?post_type=post&category_name=' . $wp_rewrite->preg_index(3),
-		'local/([\w\d\-]+)/([\w\d\-]+)/cat/([\w\d\-]+)/page/([0-9]{1,})/?$'			=> 'index.php?post_type=post&category_name=' . $wp_rewrite->preg_index(3) .'&paged=' . $wp_rewrite->preg_index(4),
+		'(florida|georgia)/([\w\d\-]+)/cat/([\w\d\-]+)/?$'					   		=> 'index.php?post_type=post&category_name=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/([\w\d\-]+)/cat/([\w\d\-]+)/page/([0-9]{1,})/?$'			=> 'index.php?post_type=post&category_name=' . $wp_rewrite->preg_index(3) .'&paged=' . $wp_rewrite->preg_index(4),
 
 		'venues/?$' 																=> 'index.php?post_type=venue',
 		'venues/page/([0-9]{1,})/?$' 												=> 'index.php?post_type=venue&paged=' . $wp_rewrite->preg_index(1),
 
 		'events/?$' 																=> 'index.php?post_type=event',
 
-		'featured-vendor/([\w\d\-\=]+)/?$' 											=> 'index.php?post_type=featured-vendor&track=' . $wp_rewrite->preg_index(1),
+		'featured-vendor/([\w\d\-\=]+)/?$' 											=> 'index.php?post_type=featured-vendor&track=' . $wp_rewrite->preg_index(1)
 
 	);
 
-	$wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
+	$wp_rewrite->rules = $wp_rewrite->rules + $new_rules;
+	
 }
 add_action( 'generate_rewrite_rules', 'flo_add_rewrite_rules' );
 

@@ -76,7 +76,7 @@
 					<h3>Local Editions</h3>					
 					<ul>
 						<?php foreach (array('florida', 'georgia') as $state): ?>
-							<li><a href="<?php echo site_url('local/'.$state); ?>"><?php echo $state; ?></a></li>
+							<li><a href="<?php echo site_url($state); ?>"><?php echo $state; ?></a></li>
 						<?php endforeach; ?>							
 					</ul>
 				</div>	

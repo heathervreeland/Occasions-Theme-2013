@@ -39,7 +39,7 @@
 							<?php //$regions = flo_get_regions_links(false); ?>
 							<?php foreach (array('florida', 'georgia') as $state): ?>
 							<?php //foreach ($regions as $state) : ?>
-								<li><a href="<?php echo site_url('local/'.$state); ?>"><?php echo $state; ?></a></li>
+								<li><a href="<?php echo site_url($state); ?>"><?php echo $state; ?></a></li>
 							<?php endforeach; ?>							
 						</ul>
 					</div>
