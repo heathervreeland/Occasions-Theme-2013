@@ -157,7 +157,7 @@ function flo_add_rewrite_rules() {
 
 	);
 
-	$wp_rewrite->rules = $wp_rewrite->rules + $new_rules;
+	$wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
 	
 }
 add_action( 'generate_rewrite_rules', 'flo_add_rewrite_rules' );
