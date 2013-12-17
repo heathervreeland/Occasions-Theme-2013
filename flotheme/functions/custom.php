@@ -233,7 +233,7 @@ function flo_find_template($templates, $extension = 'php'){
 }
 
 function flo_get_region_venue_permalink($city, $venue, $type = 'services') {
-	return get_term_link($city, 'region') . $type . '/' . $venue . '/';
+	return str_replace('region/','', get_term_link($city, 'region')) . $type . '/' . $venue . '/';
 }
 function flo_region_venue_permalink($city, $venue, $type = 'services') {
 	echo flo_get_region_venue_permalink($city, $venue, $type);

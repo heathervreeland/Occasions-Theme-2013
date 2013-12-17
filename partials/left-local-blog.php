@@ -42,13 +42,13 @@ $regions = flo_get_regions_links(false);
 
                 // if we are looking at a venue-type taxonomy search
                 //echo '<li class="gradient' . $i . '"><a href="' . flo_get_region_venue_permalink($city, $tax_venue_type->slug, "venues") . '" class="title">' . $city->name . '</a></li>';
-                echo '<li class="gradient' . $i . '"><a href="' . get_term_link($city, "region") . '" class="title">' . $city->name . '</a></li>';
+                echo '<li class="gradient' . $i . '"><a href="/' . strtolower($state->slug . '/' . $city->slug) . '" class="title">' . $city->name . '</a></li>';
 
               } else {
               
                 // otherwise we are looking at a service taxonomy search
                 //echo '<li class="gradient' . $i . '"><a href="' . flo_get_region_venue_permalink($city, $tax_service->slug, "services") . '" class="title">' . $city->name . '</a></li>';
-                echo '<li class="gradient' . $i . '"><a href="' . get_term_link($city, "region") . '" class="title">' . $city->name . '</a></li>';
+                echo '<li class="gradient' . $i . '"><a href="/' . strtolower($state->slug . '/' . $city->slug) . '" class="title">' . $city->name . '</a></li>';
 
               }
 
