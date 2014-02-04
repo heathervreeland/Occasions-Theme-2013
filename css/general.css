@@ -7057,3 +7057,79 @@ html > body .ui-pnotify {
   display: block;
   margin: 0 auto;
 }
+
+
+/* Vendors & Venues */
+.vendors-map-full {
+	min-height: 450px;
+	background: url('../img/vendors-map-full.png') no-repeat;
+	margin-top: -60px;
+	overflow: hidden;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #dadada;
+}
+
+
+.vendors-desc-right {
+	float: right;
+	font-size: 0.8em !important;
+	width: 250px;
+	padding-top: 73px;
+	color: #000;
+}
+
+.vendors-map-title {
+	width: 260px;
+	height: 135px;
+	text-indent: -9999px;
+	background: url('../img/vendors-map-title.png') no-repeat;
+}
+
+.vendors-desc-right p {
+	text-align: center;
+}
+
+.vendors-list-left {
+	float: left;
+	width: 390px;
+	padding-top: 310px;
+	overflow: hidden;
+}
+
+.vendors-list-left strong {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.vendors-list-left ul {
+	margin: 12px 0;
+	list-style-type: none;
+}
+
+.vendors-list-left ul li {
+	list-style: none;
+	float: left;
+	width: 130px;
+	margin: 0;
+	padding-right: 13px;
+}
+
+.vendors-list-left ul li a {
+	display: block;
+	text-decoration: none !important;
+	color: #000;
+}
+
+.vendors-apply {
+	margin-top: 15px;
+	color: #000;
+}
+
+.vendors-apply strong {
+	text-transform: uppercase;
+}
+
+.vendors-apply p {
+	font-size: 0.7em;
+}

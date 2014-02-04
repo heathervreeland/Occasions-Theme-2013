@@ -4,6 +4,9 @@
 			<?php
 				$section = flo_get_nav_section('weddings');
 			?>
+			<li class="area">
+				<a href="<?php flo_permalink('vendors') ?>">Vendors &amp; Venues</a>
+			</li>
 			<li class="weddings">
 				<a href="<?php echo $section['permalink'] ?>">Weddings</a>
 				<div class="submenu cf">
@@ -126,42 +129,6 @@
 				</div>
 			</li>
 			<li class="galleries"><a href="<?php flo_permalink('galleries') ?>">Galleries</a></li>
-			<li class="area">
-				<a href="<?php flo_permalink('vendors') ?>">Services &amp; Venues</a>
-				<div class="submenu cf">
-					<div class="services">
-						<h3>Services</h3>
-						<ul class="list">
-							<?php $terms = get_terms('service', array(
-								'hide_empty' => false,
-								'orderby' 	 => 'name',
-								'order'		 => 'ASC',
-							)); ?>
-							<?php foreach ($terms as $term): ?>
-								<li><a href="<?php echo get_category_link($term); ?>"><?php echo $term->name; ?></a></li>
-							<?php endforeach ?>
-						</ul>
-					</div>
-					<div class="services">
-						<h3>Venues</h3>
-						<ul class="list">
-							<li class="full"><a href="<?php echo site_url('venues'); ?>">View All</a></li>
-							<?php $terms = get_terms('venue-type', array(
-								'hide_empty' => false,
-								'orderby' 	 => 'name',
-								'order'		 => 'ASC',
-							)); ?>
-							<?php foreach ($terms as $term): ?>
-								<li><a href="<?php echo get_category_link($term); ?>"><?php echo $term->name; ?></a></li>
-							<?php endforeach ?>
-						</ul>
-					</div>
-					<div class="by-location">
-						<h3>By Location</h3>
-						<a href="<?php flo_permalink('vendors') ?>">View the Map</a>
-					</div>
-				</div>
-			</li>
 		</ul>
 	</nav>
 </div>
