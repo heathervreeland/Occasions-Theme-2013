@@ -7130,13 +7130,13 @@ html > body .ui-pnotify {
 }
 
 .vendors-map-full.atlanta, .vendors-map-full.savannah {
-	min-height: 0;
+	min-height: 380px;
 	margin-top: -20px;
 	background: url('../img/georgia_map.png') no-repeat;
 }
 
 .vendors-map-full.orlando, .vendors-map-full.tampa, .vendors-map-full.south-florida, .vendors-map-full.jacksonville {
-	min-height: 0;
+	min-height: 380px;
 	margin-top: -20px;
 	background: url('../img/florida_map.png') no-repeat;
 }
