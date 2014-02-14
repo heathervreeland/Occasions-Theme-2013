@@ -87,55 +87,9 @@
             ?>
 					</ul>
 				</li>
+				
 				<li>
-					<a href="#">Venues</a>
-					<ul class="sub">
-						<?php 
-							$venues = get_terms('venue-type', array(
-								'hide_empty' => false,
-							));
-						?>
-						<?php foreach ($venues as $venue): ?>
-							<li>
-                <?php
-                // test to see if we are in a city.  if so, then toss the city in the url
-                if ( $region ) { 
-                ?>
-								<a href="<?php echo flo_region_venue_permalink($region, $venue->slug, 'venues') ?>"><?php echo $venue->name ?></a>
-                <?php
-                // else only have the state in the url
-                } else { 
-                ?>
-								<a href="<?php echo flo_region_venue_permalink($state, $venue->slug, 'venues') ?>"><?php echo $venue->name ?></a>
-                <? } ?>
-							</li>
-						<?php endforeach ?>						
-					</ul>
-				</li>
-				<li>
-					<a href="#">Vendors</a>
-					<ul class="sub">
-						<?php 
-							$vendors = get_terms('service', array(
-								'hide_empty' => false,
-							));
-						?>
-						<?php foreach ($vendors as $vendor): ?>
-							<li>
-                <?php 
-                // test to see if we are in a city.  if so, then toss the city in the url
-                if ( $region ) { 
-                ?>
-								<a href="<?php echo flo_region_venue_permalink($region, $vendor->slug, 'services') ?>"><?php echo $vendor->name ?></a>
-                <?php 
-                // else only have the state in the url
-                } else { 
-                ?>
-								<a href="<?php echo flo_region_venue_permalink($state, $vendor->slug, 'services') ?>"><?php echo $vendor->name ?></a>
-                <?php } ?>
-							</li>
-						<?php endforeach ?>						
-					</ul>					
+					<a href="/vendors/<?php echo $region ? strtolower($region->slug) : ""; ?>">Vendors &amp; Venues</a>
 				</li>					
 				<li>
 					<a href="<?php echo flo_region_events_permalink($state); ?>">Events</a>				

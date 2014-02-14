@@ -27,12 +27,7 @@ Template Name: Vendors-City
 						<h1><?php echo ucfirst($city) ?></h1>
 						<span>Venues &amp; Vendors</span>
 					</div>
-					<p>
-						So that you can quickly find that trustworthy team of event vendors without worry of their reputation and skills, we created the Celebration Society, a carefully curated network of only the most talented, quality-centric wedding venues and party services in the special events industry. The businesses invited to join are chosen with careful consideration for their impeccable reputation, innate talent, commitment to their craft, keen sense of style, quality of work, professionalism and unmatched customer service.
-					</p>
-					<p>
-						All of this, so you can trust your vendors and have a worry-free party planning experience!
-					</p>
+					<?php echo $term[0]->description; ?>
 				</div>
 			</div>
 		
