@@ -21,6 +21,7 @@ Template Name: Vendors-City
 	<div class="local" id="in-your-area-map">
 		<div class="story">
 			<div class="vendors-map-full <?php echo $city; ?>">
+				<div class="location-star"></div>
 				<div class="vendors-city-desc-right">
 					<div class="vendors-map-title">
 						<h1><?php echo ucfirst($city) ?></h1>
