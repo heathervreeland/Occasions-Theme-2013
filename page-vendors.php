@@ -23,15 +23,15 @@ Template Name: Vendors
 						
 						<li>
 							<strong>Georgia</strong>
-							<a href="#">Atlanta</a>
-							<a href="#">Savannah</a>
+							<a href="/vendors/atlanta">Atlanta</a>
+							<a href="/vendors/savannah">Savannah</a>
 						</li>
 						<li>
 							<strong>Florida</strong>
-							<a href="#">Orlando</a>
-							<a href="#">Tampa</a>
-							<a href="#">South Florida</a>
-							<a href="#">Jacksonville</a>
+							<a href="/vendors/orlando">Orlando</a>
+							<a href="/vendors/tampa">Tampa</a>
+							<a href="/vendors/south-florida">South Florida</a>
+							<a href="/vendors/jacksonville">Jacksonville</a>
 						</li>
 					</ul>
 				</div>

@@ -111,11 +111,26 @@ function flo_add_rewrite_rules() {
 	$new_rules = array(
 		'(florida|georgia)/?$' 					=> 'index.php?post_type=post&region=' . $wp_rewrite->preg_index(1) . '&paged=' . $wp_rewrite->preg_index(2),
 	
+	/* custom services override */
+	
+		'(florida|georgia)/(bands-and-musicians|cakes|caterers|ceremony|djs|dresses|favors|flowers-and-decor|hair-makeup|hotels|invitations|lighting|photobooth|photographers|planners|registries|rehearsal|rentals|resources|rings|tuxedos|videographers)/?$' 					=> 'index.php?post_type=service&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
+		'(florida|georgia)/(bands-and-musicians|cakes|caterers|ceremony|djs|dresses|favors|flowers-and-decor|hair-makeup|hotels|invitations|lighting|photobooth|photographers|planners|registries|rehearsal|rentals|resources|rings|tuxedos|videographers)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(4),
+	
+		'(florida|georgia)/([\w\d\-]+)/(bands-and-musicians|cakes|caterers|ceremony|djs|dresses|favors|flowers-and-decor|hair-makeup|hotels|invitations|lighting|photobooth|photographers|planners|registries|rehearsal|rentals|resources|rings|tuxedos|videographers)/?$' 					=> 'index.php?post_type=service&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3),
+		'(florida|georgia)/([\w\d\-]+)/(bands-and-musicians|cakes|caterers|ceremony|djs|dresses|favors|flowers-and-decor|hair-makeup|hotels|invitations|lighting|photobooth|photographers|planners|registries|rehearsal|rentals|resources|rings|tuxedos|videographers)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(5),
+
+	
 	'(florida|georgia)/([\w\d\-]+)/?$' 					=> 'index.php?post_type=post&region=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
+		
+			
+	/* must move venues into the servies category */
+		'(florida|georgia)/([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3),
+		
+	/* end custom services override */
 	
     //'local/([\w\d\-]+)/([\w\d\-]+)/services/?$'=>'index.php?post_type=venue&term-name=service&region=' . $wp_rewrite->preg_index(2), //dded by jhaun@handbrewed.com - 9/30/2013
-		'(florida|georgia)/services/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
-		'(florida|georgia)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(4),
+		'(florida|georgia)/venues/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
+		'(florida|georgia)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(4),
 
     //'local/([\w\d\-]+)/services/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1), //dded by jhaun@handbrewed.com - 9/30/2013
 
@@ -134,10 +149,10 @@ function flo_add_rewrite_rules() {
 		'(florida|georgia)/([\w\d\-]+)/services/([\w\d\-]+)/page/([0-9]{1,})/?$' 		=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&&service=' . $wp_rewrite->preg_index(3) . '&paged=' . $wp_rewrite->preg_index(4),
 
     //'local/([\w\d\-]+)/venues/?$'=>'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1), //this line and next one added by jhaun@handbrewed.com - 9/30/2013
-    '(florida|georgia)/venues/page/([0-9]{1,})/?$'          => 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . '&paged=' . $wp_rewrite->preg_index(2),
-
-		'(florida|georgia)/venues/([\w\d\-]+)/?$'   								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2),
-		'(florida|georgia)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
+    // '(florida|georgia)/venues/page/([0-9]{1,})/?$'          => 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . '&paged=' . $wp_rewrite->preg_index(2),
+// 
+		// '(florida|georgia)/venues/([\w\d\-]+)/?$'   								=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2),
+		// '(florida|georgia)/venues/([\w\d\-]+)/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&venue-type=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
 
 		'(florida|georgia)/([\w\d\-]+)/events/?$'					   				=> 'index.php?post_type=event' . '&region=' . $wp_rewrite->preg_index(1) . '&norewrite=1',
 		'(florida|georgia)/([\w\d\-]+)/events/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=event&paged=' . $wp_rewrite->preg_index(3) . '&region=' . $wp_rewrite->preg_index(2) . '&norewrite=1', // . '&type=' . $wp_rewrite->preg_index(3),
@@ -147,13 +162,19 @@ function flo_add_rewrite_rules() {
 
 		'(florida|georgia)/([\w\d\-]+)/cat/([\w\d\-]+)/?$'					   		=> 'index.php?post_type=post&category_name=' . $wp_rewrite->preg_index(3),
 		'(florida|georgia)/([\w\d\-]+)/cat/([\w\d\-]+)/page/([0-9]{1,})/?$'			=> 'index.php?post_type=post&category_name=' . $wp_rewrite->preg_index(3) .'&paged=' . $wp_rewrite->preg_index(4),
-
+		
+		/* vendors */
+		
+		'vendors/([\w\d\-]+)/?$' 													=> 'index.php?pagename=vendors-in-city&tag=' . $wp_rewrite->preg_index(1),
+		
+		
 		'venues/?$' 																=> 'index.php?post_type=venue',
 		'venues/page/([0-9]{1,})/?$' 												=> 'index.php?post_type=venue&paged=' . $wp_rewrite->preg_index(1),
 
 		'events/?$' 																=> 'index.php?post_type=event',
 
 		'featured-vendor/([\w\d\-\=]+)/?$' 											=> 'index.php?post_type=featured-vendor&track=' . $wp_rewrite->preg_index(1)
+	
 
 	);
 
@@ -161,6 +182,30 @@ function flo_add_rewrite_rules() {
 	
 }
 add_action( 'generate_rewrite_rules', 'flo_add_rewrite_rules' );
+
+
+/* NEW */
+
+add_filter('post_link', 'region_permalink', 10, 3);
+add_filter('post_type_link', 'region_permalink', 10, 3);
+ 
+function region_permalink($permalink, $post_id, $leavename) {
+    if (strpos($permalink, '%region%') === FALSE) return $permalink;
+     
+        // Get post
+        $post = get_post($post_id);
+        if (!$post) return $permalink;
+ 
+        // Get taxonomy terms
+        $terms = wp_get_object_terms($post->ID, 'region');   
+        if (!is_wp_error($terms) && !empty($terms) && is_object($terms[0])) $taxonomy_slug = $terms[0]->slug;
+        else $taxonomy_slug = 'no-region';
+ 
+    return str_replace('%region%', $taxonomy_slug, $permalink);
+}   
+
+/* *** */
+
 
 function flo_append_query_vars($vars) {
     array_push($vars, 'track');

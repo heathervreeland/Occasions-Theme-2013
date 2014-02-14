@@ -7070,7 +7070,7 @@ html > body .ui-pnotify {
 }
 
 
-.vendors-desc-right {
+.vendors-desc-right, .vendors-city-desc-right {
 	float: right;
 	font-size: 0.8em !important;
 	width: 250px;
@@ -7083,6 +7083,45 @@ html > body .ui-pnotify {
 	height: 135px;
 	text-indent: -9999px;
 	background: url('../img/vendors-map-title.png') no-repeat;
+}
+
+.vendors-map-full.atlanta, .vendors-map-full.savannah {
+	min-height: 0;
+	margin-top: -20px;
+	background: url('../img/georgia_map.png') no-repeat;
+}
+
+.vendors-map-full.orlando, .vendors-map-full.tampa, .vendors-map-full.south-florida, .vendors-map-full.jacksonville {
+	min-height: 0;
+	margin-top: -20px;
+	background: url('../img/florida_map.png') no-repeat;
+}
+
+.vendors-city-desc-right {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.vendors-city-desc-right .vendors-map-title {
+	height: 100px;
+	text-indent: 0;
+	background: none;
+}
+
+.vendors-city-desc-right .vendors-map-title h1 {
+	margin-bottom: 0;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	color: #000;
+	font-size: 36px;
+	display: block;
+}
+
+.vendors-city-desc-right .vendors-map-title span {
+	color: #000;
+	font-size: 26px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 }
 
 .vendors-desc-right p {
@@ -7102,12 +7141,12 @@ html > body .ui-pnotify {
 	font-size: 1.2em;
 }
 
-.vendors-list-left ul {
+.vendors-list-left ul, .vendors-apply ul {
 	margin: 12px 0;
 	list-style-type: none;
 }
 
-.vendors-list-left ul li {
+.vendors-list-left ul li, .vendors-apply ul li {
 	list-style: none;
 	float: left;
 	width: 130px;
@@ -7115,10 +7154,14 @@ html > body .ui-pnotify {
 	padding-right: 13px;
 }
 
-.vendors-list-left ul li a {
+.vendors-list-left ul li a, .vendors-apply ul li a {
 	display: block;
 	text-decoration: none !important;
 	color: #000;
+}
+
+.vendors-list-left ul li a:hover, .vendors-apply ul li a:hover {
+	color: rgb(36,180,166) !important;
 }
 
 .vendors-apply {
@@ -7132,4 +7175,47 @@ html > body .ui-pnotify {
 
 .vendors-apply p {
 	font-size: 0.7em;
+}
+
+.vendors-services-list {
+	overflow: hidden;
+}
+
+.vendors-services-list h1, .vendors-apply h1 {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 25px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.vendors-apply h1 {
+	border-top: 1px solid #ddd;
+}
+
+.vendors-services-list ul {
+	float: left; 
+	width: 300px;
+	font-size: 13px;
+	list-style-type: none;
+}
+
+.vendors-services-list ul li {
+	list-style: none;
+}
+
+.vendors-services-list ul li a {
+	color: #000;
+	text-decoration: none !important;
+}
+
+.vendors-services-list ul li a:hover {
+	color: rgb(36,180,166) !important;
+}
+
+.vendors-services-list ul li.service-title {
+	color: rgb(36,180,166);
+	font-size: 15px;
+	text-transform: uppercase; 
+	padding-top: 10px;
 }
