@@ -63,7 +63,7 @@
     'hide_empty' => false,
   ));
 
-  if (count($venues) && $region) : 
+  if ( false && count($venues) && $region) : 
 
   ?>
 	<div class="block services">

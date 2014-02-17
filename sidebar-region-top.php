@@ -16,7 +16,7 @@
 			'hide_empty' => false,
 		));
 	?>
-	<?php if (count($venues) && $state) : ?>
+	<?php if (false && count($venues) && $state) : ?>
 	<div class="block services">
 		<h3 class="a">Venues in <?php echo $state->name ?></h3>
 		<ul>
