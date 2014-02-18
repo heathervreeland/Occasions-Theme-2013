@@ -76,11 +76,11 @@
                   foreach ($cities as $city) : if ($region->name == $city->name) continue; 
                     if ( $service_taxonomy_slug != 'region' ) {
             ?>
-						<li><a href="<?php echo get_term_link( $city ) . $service_taxonomy_slug . '/' . $service_taxonomy_type_slug; ?>"><?php echo $city->name; ?></a></li>
+						<li><a href="<?php echo str_replace('region/', '', get_term_link( $city )); ?>"><?php echo $city->name; ?></a></li>
 						<?php 
                     } else {
             ?>
-						<li><a href="<?php echo get_term_link( $city );  ?>"><?php echo $city->name; ?></a></li>
+						<li><a href="<?php echo str_replace('region/', '', get_term_link( $city )); ?>"><?php echo $city->name; ?></a></li>
 						<?php 
                     }
                   endforeach; 
