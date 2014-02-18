@@ -125,6 +125,7 @@ function flo_add_rewrite_rules() {
 			
 	/* must move venues into the servies category */
 		'(florida|georgia)/([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3),
+		'([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
 		
 	/* end custom services override */
 	
@@ -279,6 +280,9 @@ function flo_find_template($templates, $extension = 'php'){
 
 function flo_get_region_venue_permalink($city, $venue, $type = 'services') {
 	return str_replace('region/','', get_term_link($city, 'region')) . $type . '/' . $venue . '/';
+}
+function flo_get_service_permalink($city, $venue) {
+	return str_replace('/service','-weddings', str_replace('region/','', get_term_link($city, 'region')) . 'service' . '/' . $venue . '/');
 }
 function flo_region_venue_permalink($city, $venue, $type = 'services') {
 	echo flo_get_region_venue_permalink($city, $venue, $type);
