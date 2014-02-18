@@ -6,6 +6,10 @@
 
 	flo_part('side-top-ad');
 
+		$venues_term = get_terms('service', array('slug' => "venues"));
+		$venues_term = $venues_term[0];
+	
+
     if ( is_single() ) {
 
       // if we are looking at a single post
@@ -59,11 +63,14 @@
 
     }
 
-  $venues = get_terms('venue-type', array(
-    'hide_empty' => false,
-  ));
+  // $venues = get_terms('venue-type', array(
+    // 'hide_empty' => false,
+  // ));
+  
+		$venues_term = get_terms('service', array('slug' => "venues"));
+		$venues_term = $venues_term[0];
 
-  if ( false && count($venues) && $region) : 
+  if (count($venues) && $region) : 
 
   ?>
 	<div class="block services">
@@ -71,7 +78,7 @@
 		<ul>
 			<?php foreach ($venues as $venue): ?>
 				<li>
-					<a href="<?php echo flo_region_venue_permalink($region, $venue->slug, 'venues') ?>"><?php echo $venue->name ?></a>
+					<a href="<?php echo flo_get_service_permalink($region, $venue->slug) ?>"><?php echo $venue->name ?></a>
 				</li>
 			<?php endforeach ?>
 		</ul>		
@@ -129,8 +136,9 @@
 		<h3 class="a">Services in <?php echo $region->name ?></h3>
 		<ul>
 			<?php foreach ($services as $service): ?>
+				<?php if($service->parent == $venues_term->term_id || $service->slug == "venues") continue; ?>
 				<li>
-					<a href="<?php echo flo_region_venue_permalink($region, $service->slug, 'services') ?>"><?php echo $service->name ?></a>
+					<a href="<?php echo flo_get_service_permalink($region, $service->slug) ?>"><?php echo $service->name ?></a>
 				</li>
 			<?php endforeach ?>
 		</ul>		

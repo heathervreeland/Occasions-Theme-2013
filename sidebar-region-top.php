@@ -2,6 +2,10 @@
 	<?php flo_part('side-top-ad') ?>
 
 	<?php 
+	
+		$venues_term = get_terms('service', array('slug' => "venues"));
+		$venues_term = $venues_term[0];
+	
 		$region = get_term_by('slug', get_query_var('region'), 'region');
 		if ($region->parent) {
 			$state = get_term($region->parent, 'region');
@@ -12,17 +16,29 @@
 	?>
 
 	<?php 
-		$venues = get_terms('venue-type', array(
-			'hide_empty' => false,
+	
+		$venues_term = get_terms('service', array('slug' => "venues"));
+		$venues_term = $venues_term[0];
+		
+	
+		// $venues = get_terms('service', array(
+			// 'hide_empty' => false,
+		// ));
+
+		$venues = get_terms('service', array(
+		'hide_empty' => false,
+		'parent' => $venues_term->term_id
 		));
+  
 	?>
-	<?php if (false && count($venues) && $state) : ?>
+	
+	<?php if (count($venues) && $state) : ?>
 	<div class="block services">
 		<h3 class="a">Venues in <?php echo $state->name ?></h3>
 		<ul>
 			<?php foreach ($venues as $venue): ?>
 				<li>
-					<a href="<?php echo flo_region_venue_permalink($state, $venue->slug, 'venues') ?>"><?php echo $venue->name ?></a>
+					<a href="<?php echo flo_get_service_permalink($state, $venue->slug) ?>"><?php echo $venue->name ?></a>
 				</li>
 			<?php endforeach ?>
 		</ul>		
@@ -85,8 +101,9 @@
 				));
 			?>
 			<?php foreach ($services as $service): ?>
+				<?php if($service->parent == $venues_term->term_id || $service->slug == "venues") continue; ?>
 				<li>
-					<a href="<?php echo flo_region_venue_permalink($state, $service->slug, 'services') ?>"><?php echo $service->name ?></a>
+					<a href="<?php echo flo_get_service_permalink($state, $service->slug) ?>"><?php echo $service->name ?></a>
 				</li>
 			<?php endforeach ?>
 		</ul>		
