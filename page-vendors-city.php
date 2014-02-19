@@ -24,7 +24,7 @@ Template Name: Vendors-City
 				<div class="location-star"></div>
 				<div class="vendors-city-desc-right">
 					<div class="vendors-map-title">
-						<h1><?php echo ucfirst($city) ?></h1>
+						<h1><?php echo $term[0]->name; ?></h1>
 						<span>Venues &amp; Vendors</span>
 					</div>
 					<?php echo $term[0]->description; ?>
@@ -36,81 +36,81 @@ Template Name: Vendors-City
 	
 				<ul class="services-list">
 					<li class="service-title">Planning & Coordination</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-planners"><?php echo ucfirst($city); ?> Wedding Planners</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-planners"><?php echo ucfirst($city); ?> Party Planners</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-planning-and-coordination"><?php echo ucfirst($city); ?> Day-Of Coordination</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-planners"><?php echo $term[0]->name; ?> Wedding Planners</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-planners"><?php echo $term[0]->name; ?> Party Planners</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-planning-and-coordination"><?php echo $term[0]->name; ?> Day-Of Coordination</a></li>
 					
 					<li class="service-title">Photographers</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-photographers"><?php echo ucfirst($city); ?> Wedding Photographers</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bar-bat-mitzvah-photographers"><?php echo ucfirst($city); ?> Bar/Bat Mitzvah Photographers</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/photobooth"><?php echo ucfirst($city); ?> Photobooths</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-photographers"><?php echo $term[0]->name; ?> Wedding Photographers</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bar-bat-mitzvah-photographers"><?php echo $term[0]->name; ?> Bar/Bat Mitzvah Photographers</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/photobooth"><?php echo $term[0]->name;; ?> Photobooths</a></li>
 					
 					<li class="service-title">Bands, DJs &amp; Musicians</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/djs"><?php echo ucfirst($city); ?> DJs</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-ceremony-musicians"><?php echo ucfirst($city); ?> Wedding Ceremony Musicians</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-bands"><?php echo ucfirst($city); ?> Wedding Bands</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-cellists"><?php echo ucfirst($city); ?> Wedding Cellists</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-guitarists"><?php echo ucfirst($city); ?> Wedding Guitarists</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-harpists"><?php echo ucfirst($city); ?> Wedding Harpists</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-jazz-musicians"><?php echo ucfirst($city); ?> Wedding Jazz Musicians</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-pianists"><?php echo ucfirst($city); ?> Wedding Pianists</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-string-quartets"><?php echo ucfirst($city); ?> Wedding String Quartets</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-swing-bands"><?php echo ucfirst($city); ?> Wedding Swing Bands</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-violinists"><?php echo ucfirst($city); ?> Wedding Violinists</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-vocalists"><?php echo ucfirst($city); ?> Wedding Vocalists</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/djs"><?php echo $term[0]->name;; ?> DJs</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-ceremony-musicians"><?php echo $term[0]->name;; ?> Wedding Ceremony Musicians</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-bands"><?php echo $term[0]->name;; ?> Wedding Bands</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-cellists"><?php echo $term[0]->name;; ?> Wedding Cellists</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-guitarists"><?php echo $term[0]->name;; ?> Wedding Guitarists</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-harpists"><?php echo $term[0]->name;; ?> Wedding Harpists</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-jazz-musicians"><?php echo $term[0]->name;; ?> Wedding Jazz Musicians</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-pianists"><?php echo $term[0]->name;; ?> Wedding Pianists</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-string-quartets"><?php echo $term[0]->name;; ?> Wedding String Quartets</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-swing-bands"><?php echo $term[0]->name;; ?> Wedding Swing Bands</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-violinists"><?php echo $term[0]->name;; ?> Wedding Violinists</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-vocalists"><?php echo $term[0]->name;; ?> Wedding Vocalists</a></li>
 					
 					<li class="service-title">Catering &amp; Beverage</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-caterers"><?php echo ucfirst($city); ?> Wedding Caterers</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-caterers"><?php echo ucfirst($city); ?> Party Caterers</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/kosher-caterers"><?php echo ucfirst($city); ?> Kosher Caterers</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bartenders-2"><?php echo ucfirst($city); ?> Bartenders</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-caterers"><?php echo $term[0]->name;; ?> Wedding Caterers</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-caterers"><?php echo $term[0]->name;; ?> Party Caterers</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/kosher-caterers"><?php echo $term[0]->name;; ?> Kosher Caterers</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bartenders-2"><?php echo $term[0]->name;; ?> Bartenders</a></li>
 					
 					<li class="service-title">Stationery &amp; Invitations</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-invitations"><?php echo ucfirst($city); ?> Wedding Invitations</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-invitations"><?php echo ucfirst($city); ?> Party Invitations</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-calligraphy"><?php echo ucfirst($city); ?> Wedding Calligraphy</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-invitations"><?php echo $term[0]->name;; ?> Wedding Invitations</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-invitations"><?php echo $term[0]->name;; ?> Party Invitations</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-calligraphy"><?php echo $term[0]->name;; ?> Wedding Calligraphy</a></li>
 					
 					<li class="service-title">Cakes &amp; Dessert</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-cakes-2"><?php echo ucfirst($city); ?> Wedding Cakes</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/grooms-cakes"><?php echo ucfirst($city); ?> Groom's Cakes</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-cakes"><?php echo ucfirst($city); ?> Party Cakes</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-cakes-2"><?php echo $term[0]->name;; ?> Wedding Cakes</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/grooms-cakes"><?php echo $term[0]->name;; ?> Groom's Cakes</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-cakes"><?php echo $term[0]->name;; ?> Party Cakes</a></li>
 				</ul>
 				
 				<ul class="services-list">
 					<li class="service-title">Event Venues</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-venues-venues"><?php echo ucfirst($city); ?> Wedding Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/hotels"><?php echo ucfirst($city); ?> Hotel Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rehearsal"><?php echo ucfirst($city); ?> Rehearsal Dinner Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/amazing-views"><?php echo ucfirst($city); ?> Venues with Amazing Views</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/country-club-venues"><?php echo ucfirst($city); ?> Country Club Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/city-and-private-clubs"><?php echo ucfirst($city); ?> City and Private Club Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/antebellum-homes"><?php echo ucfirst($city); ?> Antebellum Home Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/ballroom-venues"><?php echo ucfirst($city); ?> Ballroom Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/banquet-halls"><?php echo ucfirst($city); ?> Banquet Hall Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/conference-centers"><?php echo ucfirst($city); ?> Conference Center Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/galleries-museums"><?php echo ucfirst($city); ?> Galleries &amp; Museum Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/gardens"><?php echo ucfirst($city); ?> Garden Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/golf-course"><?php echo ucfirst($city); ?> Golf Course Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/historic-venues"><?php echo ucfirst($city); ?> Historic Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/outdoor-venues"><?php echo ucfirst($city); ?> Outdoor Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/private-home-mansion-venues"><?php echo ucfirst($city); ?> Private Home/Mansions Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rooftop-venues"><?php echo ucfirst($city); ?> Rooftop Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/waterfront-venues"><?php echo ucfirst($city); ?> Waterfront Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/winery-vineyard-venues"><?php echo ucfirst($city); ?> Wineries &amp; Vineyards</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/beachfront-venues"><?php echo ucfirst($city); ?> Beach Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-venues-venues"><?php echo $term[0]->name;; ?> Wedding Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/hotels"><?php echo $term[0]->name;; ?> Hotel Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rehearsal"><?php echo $term[0]->name;; ?> Rehearsal Dinner Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/amazing-views"><?php echo $term[0]->name;; ?> Venues with Amazing Views</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/country-club-venues"><?php echo $term[0]->name;; ?> Country Club Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/city-and-private-clubs"><?php echo $term[0]->name;; ?> City and Private Club Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/antebellum-homes"><?php echo $term[0]->name;; ?> Antebellum Home Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/ballroom-venues"><?php echo $term[0]->name;; ?> Ballroom Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/banquet-halls"><?php echo $term[0]->name;; ?> Banquet Hall Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/conference-centers"><?php echo $term[0]->name;; ?> Conference Center Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/galleries-museums"><?php echo $term[0]->name;; ?> Galleries &amp; Museum Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/gardens"><?php echo $term[0]->name;; ?> Garden Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/golf-course"><?php echo $term[0]->name;; ?> Golf Course Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/historic-venues"><?php echo $term[0]->name;; ?> Historic Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/outdoor-venues"><?php echo $term[0]->name;; ?> Outdoor Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/private-home-mansion-venues"><?php echo $term[0]->name;; ?> Private Home/Mansions Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rooftop-venues"><?php echo $term[0]->name;; ?> Rooftop Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/waterfront-venues"><?php echo $term[0]->name;; ?> Waterfront Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/winery-vineyard-venues"><?php echo $term[0]->name;; ?> Wineries &amp; Vineyards</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/beachfront-venues"><?php echo $term[0]->name;; ?> Beach Venues</a></li>
 					
 					<li class="service-title">Florals and Event Design</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-lighting"><?php echo ucfirst($city); ?> Event Lighting</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-rentals"><?php echo ucfirst($city); ?> Party Rentals</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/tent-rentals"><?php echo ucfirst($city); ?> Tent Rentals</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/chair-covers-and-linens"><?php echo ucfirst($city); ?> Chair Covers &amp; Linens</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-drapery-2"><?php echo ucfirst($city); ?> Event Drapery</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-florist"><?php echo ucfirst($city); ?> Wedding Florist</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-lighting"><?php echo $term[0]->name;; ?> Event Lighting</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-rentals"><?php echo $term[0]->name;; ?> Party Rentals</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/tent-rentals"><?php echo $term[0]->name;; ?> Tent Rentals</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/chair-covers-and-linens"><?php echo $term[0]->name;; ?> Chair Covers &amp; Linens</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-drapery-2"><?php echo $term[0]->name;; ?> Event Drapery</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-florist"><?php echo $term[0]->name;; ?> Wedding Florist</a></li>
 					
 					<li class="service-title">Other Services</li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bridal-shows"><?php echo ucfirst($city); ?> Bridal Shows</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-expos"><?php echo ucfirst($city); ?> Party Expos</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/convention-visitor-bureaus"><?php echo ucfirst($city); ?> Convention &amp; Visitor Bureaus</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bridal-shows"><?php echo $term[0]->name;; ?> Bridal Shows</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-expos"><?php echo $term[0]->name;; ?> Party Expos</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/convention-visitor-bureaus"><?php echo $term[0]->name;; ?> Convention &amp; Visitor Bureaus</a></li>
 				</ul>
 				
 			</div>

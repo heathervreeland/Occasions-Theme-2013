@@ -8,7 +8,21 @@
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<title><?php wp_title('|', true, 'right'); ?></title>
+	      	
+      	<?php 
+      	
+      		$vpid = get_page_by_path('vendors-in-city');
+		    if ($vpid) {
+		        $vpid = $vpid->ID;
+		    } else {
+		        $vpid = null;
+		    }
+			$city = $wp_query->query_vars["tag"];
+			$term = get_terms('region', array('slug' => $city));
+			
+			$newtitle = $term[0]->name . " Weddings, Wedding Venues in " . $term[0]->name .  ", " . $term[0]->name . " Wedding and Party Vendors | OCCASIONS";
+      	?>
+	<title><?php if ($vpid == $post->ID){ echo $newtitle; } else { wp_title('|', true, 'right'); }?></title>
 	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>

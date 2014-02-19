@@ -7233,6 +7233,11 @@ html > body .ui-pnotify {
 	border-bottom: 1px solid #ddd;
 }
 
+.vendors-apply {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
 .vendors-apply h1 {
 	border-top: 1px solid #ddd;
 }
