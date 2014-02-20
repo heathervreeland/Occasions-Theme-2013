@@ -1253,7 +1253,7 @@ input[type="button"] {
   pointer-events: none;
   border-bottom-color: #4fb5a5;
   border-width: 10px;
-  left: 35px;
+  left: 246px;
 }
 #nav-main > ul > li .submenu h3 {
   color: #acc178;
@@ -1411,7 +1411,7 @@ input[type="button"] {
   background: #f68e56;
 }
 #nav-main > ul > li.parties .submenu:after {
-  left: 235px;
+  left: 435px;
   border-bottom-color: #f68e56;
 }
 #nav-main > ul > li.home:hover > a {
@@ -1421,7 +1421,7 @@ input[type="button"] {
   background: #d97295;
 }
 #nav-main > ul > li.home .submenu:after {
-  left: 510px;
+  left: 700px;
   border-bottom-color: #d97295;
 }
 #nav-main > ul > li.area:hover > a {
