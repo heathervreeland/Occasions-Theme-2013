@@ -49,8 +49,7 @@ Template Name: Vendors
 			</div>
 		
 			<div class="vendors-apply">
-				<strong>Vendors, not listed?&hellip; Apply for membership!</strong>
-				<p>Will give you text to add here..</p>
+
 			</div>
 			<?php //the_content(); ?>
 		</div>
