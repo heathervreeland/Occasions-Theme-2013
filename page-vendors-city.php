@@ -79,7 +79,7 @@ Template Name: Vendors-City
 				
 				<ul class="services-list">
 					<li class="service-title"><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/venues">Event Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-venues-venues"><?php echo $term[0]->name;; ?> Wedding Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-venues"><?php echo $term[0]->name;; ?> Wedding Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-ceremony-venues"><?php echo $term[0]->name;; ?> Wedding Ceremony Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/hotels"><?php echo $term[0]->name;; ?> Hotel Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/mitzvah-venues"><?php echo $term[0]->name;; ?> Mitzvah Venues</a></li>
