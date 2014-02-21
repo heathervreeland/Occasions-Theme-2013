@@ -25,7 +25,7 @@ function show_secondary_nav() {
 
   }
 
-  if ( $in_region ) {
+  if ( $in_region || is_page('vendors-in-city')) {
     echo '<div class="nav-secondary-wrapper">';
     echo flo_part('nav-secondary-top-region'); 
     echo '</div>';

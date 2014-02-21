@@ -51,6 +51,14 @@
         $region = false;
 
       }
+	  
+	  if(is_page('vendors-in-city'))
+	  {
+	  		$city = $wp_query->query_vars["tag"];
+			$term = get_terms('region', array('slug' => $city));
+			$city = $term[0];
+			$state = get_state_from_region($term[0]);
+	  }
 
     }
 

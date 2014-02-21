@@ -13,7 +13,7 @@ function show_fixed_left_nav() {
   // and the alternative way to see if we are on a blog post in a region
   $terms = get_the_terms( $post->ID, 'region' );
 
-  if ( $region &&  $terms ) {
+  if ( ($region &&  $terms)  || is_page('vendors-in-city') ) {
 
     $no_secondary = '';
 
