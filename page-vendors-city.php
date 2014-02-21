@@ -35,17 +35,18 @@ Template Name: Vendors-City
 				<h1>Select by Service&hellip;</h1>
 	
 				<ul class="services-list">
-					<li class="service-title">Planning & Coordination</li>
+					<li class="service-title"><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/planning-and-coordination">Planning & Coordination</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-planners"><?php echo $term[0]->name; ?> Wedding Planners</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-planners"><?php echo $term[0]->name; ?> Party Planners</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-planning-and-coordination"><?php echo $term[0]->name; ?> Day-Of Coordination</a></li>
 					
-					<li class="service-title">Photographers</li>
+					<li class="service-title"><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/photographers">Photographers</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-photographers"><?php echo $term[0]->name; ?> Wedding Photographers</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bar-bat-mitzvah-photographers"><?php echo $term[0]->name; ?> Bar/Bat Mitzvah Photographers</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/photobooth"><?php echo $term[0]->name;; ?> Photobooths</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-videographers"><?php echo $term[0]->name;; ?> Wedding Videographers</a></li>
 					
-					<li class="service-title">Bands, DJs &amp; Musicians</li>
+					<li class="service-title"><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/bands-and-musicians">Bands, DJs &amp; Musicians</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/djs"><?php echo $term[0]->name;; ?> DJs</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-ceremony-musicians"><?php echo $term[0]->name;; ?> Wedding Ceremony Musicians</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-bands"><?php echo $term[0]->name;; ?> Wedding Bands</a></li>
@@ -77,15 +78,18 @@ Template Name: Vendors-City
 				</ul>
 				
 				<ul class="services-list">
-					<li class="service-title">Event Venues</li>
+					<li class="service-title"><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/venues">Event Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-venues-venues"><?php echo $term[0]->name;; ?> Wedding Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-ceremony-venues"><?php echo $term[0]->name;; ?> Wedding Ceremony Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/hotels"><?php echo $term[0]->name;; ?> Hotel Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/mitzvah-venues"><?php echo $term[0]->name;; ?> Mitzvah Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rehearsal"><?php echo $term[0]->name;; ?> Rehearsal Dinner Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/amazing-views"><?php echo $term[0]->name;; ?> Venues with Amazing Views</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/country-club-venues"><?php echo $term[0]->name;; ?> Country Club Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/city-and-private-clubs"><?php echo $term[0]->name;; ?> City and Private Club Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/antebellum-homes"><?php echo $term[0]->name;; ?> Antebellum Home Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/ballroom-venues"><?php echo $term[0]->name;; ?> Ballroom Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/barn"><?php echo $term[0]->name;; ?> Barn Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/banquet-halls"><?php echo $term[0]->name;; ?> Banquet Hall Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/conference-centers"><?php echo $term[0]->name;; ?> Conference Center Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/galleries-museums"><?php echo $term[0]->name;; ?> Galleries &amp; Museum Venues</a></li>
@@ -99,7 +103,7 @@ Template Name: Vendors-City
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/winery-vineyard-venues"><?php echo $term[0]->name;; ?> Wineries &amp; Vineyards</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/beachfront-venues"><?php echo $term[0]->name;; ?> Beach Venues</a></li>
 					
-					<li class="service-title">Florals and Event Design</li>
+					<li class="service-title"><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/floral-and-event-design">Floral and Event Design</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/event-lighting"><?php echo $term[0]->name;; ?> Event Lighting</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/party-rentals"><?php echo $term[0]->name;; ?> Party Rentals</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/tent-rentals"><?php echo $term[0]->name;; ?> Tent Rentals</a></li>

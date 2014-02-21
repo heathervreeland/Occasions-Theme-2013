@@ -7268,3 +7268,9 @@ html > body .ui-pnotify {
 	text-transform: uppercase; 
 	padding-top: 10px;
 }
+
+.vendors-services-list ul li.service-title a {
+	color: rgb(36,180,166);
+	font-size: 15px;
+	text-decoration: none;
+}
