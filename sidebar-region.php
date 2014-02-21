@@ -41,11 +41,6 @@
 	</div>
 	<?php endif; ?>
 
-	<div class="block vmap">
-		<h3 class="a">Map</h3>
-		<div class="geo-map" id="region-geomap" data-region-id="<?php echo $region->term_id ?>" data-marker-image="<?php echo THEME_URL ?>/img/map-marker.png" data-marker-shadow="<?php echo THEME_URL ?>/img/map-marker-shadow.png"></div>
-	</div>
-
 	<?php
 		$cat_query = new WP_Query(array(
 			'posts_per_page'	=> 5,
