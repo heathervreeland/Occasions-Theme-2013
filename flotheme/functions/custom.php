@@ -118,7 +118,11 @@ function flo_add_rewrite_rules() {
 		'(florida|georgia)/([\w\d\-]+)/events/page/([0-9]{1,})/?$' 					=> 'index.php?post_type=event&paged=' . $wp_rewrite->preg_index(3) . '&region=' . $wp_rewrite->preg_index(2) . '&norewrite=1', // . '&type=' . $wp_rewrite->preg_index(3),
 	
 	/* custom services override */
-	
+		
+	/* must move venues into the servies category */
+		'(florida|georgia)/([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&&service=' . $wp_rewrite->preg_index(3),
+		'([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&&service=' . $wp_rewrite->preg_index(2),
+		
 		'(florida|georgia)/(bands-and-musicians|cakes|caterers|ceremony|djs|dresses|favors|flowers-and-decor|hair-makeup|hotels|invitations|lighting|photobooth|photographers|planners|registries|rehearsal|rentals|resources|rings|tuxedos|videographers)/?$' 					=> 'index.php?post_type=service&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
 		'(florida|georgia)/(bands-and-musicians|cakes|caterers|ceremony|djs|dresses|favors|flowers-and-decor|hair-makeup|hotels|invitations|lighting|photobooth|photographers|planners|registries|rehearsal|rentals|resources|rings|tuxedos|videographers)/page/([0-9]{1,})/?$' 	=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(4),
 	
@@ -128,10 +132,6 @@ function flo_add_rewrite_rules() {
 	
 	'(florida|georgia)/([\w\d\-]+)/?$' 					=> 'index.php?post_type=post&region=' . $wp_rewrite->preg_index(2) . '&paged=' . $wp_rewrite->preg_index(3),
 		
-			
-	/* must move venues into the servies category */
-		'(florida|georgia)/([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(2) . '&service=' . $wp_rewrite->preg_index(3),
-		'([\w\d\-]+)-weddings/([\w\d\-]+)/?$' 					=> 'index.php?post_type=venue&region=' . $wp_rewrite->preg_index(1) . '&service=' . $wp_rewrite->preg_index(2),
 		
 	/* end custom services override */
 
