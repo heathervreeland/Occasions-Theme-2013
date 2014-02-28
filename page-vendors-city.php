@@ -93,7 +93,7 @@ Template Name: Vendors-City
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/banquet-halls"><?php echo $term[0]->name;; ?> Banquet Hall Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/conference-centers"><?php echo $term[0]->name;; ?> Conference Center Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/galleries-museums"><?php echo $term[0]->name;; ?> Galleries &amp; Museum Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/gardens"><?php echo $term[0]->name;; ?> Garden Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/gardens-venues"><?php echo $term[0]->name;; ?> Garden Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/golf-course"><?php echo $term[0]->name;; ?> Golf Course Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/historic-venues"><?php echo $term[0]->name;; ?> Historic Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/outdoor-venues"><?php echo $term[0]->name;; ?> Outdoor Venues</a></li>
