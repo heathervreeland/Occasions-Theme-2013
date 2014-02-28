@@ -84,12 +84,12 @@ Template Name: Vendors-City
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/hotels"><?php echo $term[0]->name;; ?> Hotel Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/mitzvah-venues"><?php echo $term[0]->name;; ?> Mitzvah Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rehearsal-dinner-venue"><?php echo $term[0]->name;; ?> Rehearsal Dinner Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/amazing-views"><?php echo $term[0]->name;; ?> Venues with Amazing Views</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/venues-with-amazing-views"><?php echo $term[0]->name;; ?> Venues with Amazing Views</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/country-club-venues"><?php echo $term[0]->name;; ?> Country Club Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/city-and-private-clubs"><?php echo $term[0]->name;; ?> City and Private Club Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/antebellum-homes"><?php echo $term[0]->name;; ?> Antebellum Home Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/city-and-private-clubs-venues"><?php echo $term[0]->name;; ?> City and Private Club Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/antebellum-homes-venues"><?php echo $term[0]->name;; ?> Antebellum Home Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/ballroom-venues"><?php echo $term[0]->name;; ?> Ballroom Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/barn"><?php echo $term[0]->name;; ?> Barn Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/barn-venues"><?php echo $term[0]->name;; ?> Barn Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/banquet-halls"><?php echo $term[0]->name;; ?> Banquet Hall Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/conference-centers"><?php echo $term[0]->name;; ?> Conference Center Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/galleries-museums"><?php echo $term[0]->name;; ?> Galleries &amp; Museum Venues</a></li>
