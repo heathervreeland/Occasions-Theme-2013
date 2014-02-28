@@ -83,7 +83,7 @@ Template Name: Vendors-City
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/wedding-ceremony-venues"><?php echo $term[0]->name;; ?> Wedding Ceremony Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/hotels"><?php echo $term[0]->name;; ?> Hotel Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/mitzvah-venues"><?php echo $term[0]->name;; ?> Mitzvah Venues</a></li>
-					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rehearsal"><?php echo $term[0]->name;; ?> Rehearsal Dinner Venues</a></li>
+					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/rehearsal-dinner-venue"><?php echo $term[0]->name;; ?> Rehearsal Dinner Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/amazing-views"><?php echo $term[0]->name;; ?> Venues with Amazing Views</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/country-club-venues"><?php echo $term[0]->name;; ?> Country Club Venues</a></li>
 					<li><a href="/<?php echo $state->slug; ?>/<? echo $city; ?>-weddings/city-and-private-clubs"><?php echo $term[0]->name;; ?> City and Private Club Venues</a></li>
