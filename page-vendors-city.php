@@ -13,6 +13,8 @@ Template Name: Vendors-City
 
 <?php
 	$city = $wp_query->query_vars["tag"];
+	if($city == '')
+		$city = 'Atlanta'; //default to Atlanta		
 	$term = get_terms('region', array('slug' => $city));
 	$state = get_state_from_region($term[0]);
 ?>

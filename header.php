@@ -18,6 +18,8 @@
 		        $vpid = null;
 		    }
 			$city = $wp_query->query_vars["tag"];
+			if($city == '')
+				$city = 'Atlanta'; //default to Atlanta
 			$term = get_terms('region', array('slug' => $city));
 			
 			$newtitle = $term[0]->name . " Weddings, Wedding Venues in " . $term[0]->name .  ", " . $term[0]->name . " Wedding and Party Vendors | OCCASIONS";
