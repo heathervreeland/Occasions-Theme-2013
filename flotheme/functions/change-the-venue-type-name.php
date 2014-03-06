@@ -135,7 +135,7 @@ function set_venue_type_name( $name, $city='', $tax_type = null, $slug = null ) 
     $phrase = $city . ' <a href="/' . $tax_type . '/' . $slug . '/">Wedding Videographers</a> and ' . $city . ' <a href="/' . $tax_type . '/' . $slug . '/">Wedding Cinematography</a>';
     return $phrase;
   } else {
-    return $city . ' <a href="/' . $tax_type . '/' . $slug . '/">Wedding ' . $phrase . '</a>';
+    return $city . ' <a href="/' . $tax_type . '/' . $slug . '/">' . $phrase . '</a>';
   }
 }
 

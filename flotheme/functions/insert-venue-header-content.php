@@ -20,7 +20,7 @@ function insert_venue_header_content( $has_region = true ) {
   $tax_service = get_term_by('slug', get_query_var('service'), 'service');
 
     // pull the service human readable name
-    $service_name = $tax_service->name;;
+    $service_name = $tax_service->name;
 
     // pull the service taxonomy slug 
     $service_taxonomy_slug = $tax_service->taxonomy;
@@ -62,7 +62,7 @@ function insert_venue_header_content( $has_region = true ) {
     if ( $service_name == '' || $service_name == null ) {
       $header .= '<h1>' . $region_name .  ' Weddings</h1>';
     } else {
-      $header .= '<h1>' . $region_name .  ' Wedding ' . $service_name . '</h1>';
+      $header .= '<h1>' . $region_name .  ' ' . $service_name . '</h1>';
     }
 
     if ( $has_venue_type ) {
@@ -80,7 +80,7 @@ function insert_venue_header_content( $has_region = true ) {
     if ( $service_name == '' || $service_name == null ) {
       $header .= '<h1>' . $region_name .  ' Weddings</h1>';
     } else {
-      $header .= '<h1>' . $region_name .  ' Wedding ' . $service_name . '</h1>';
+      $header .= '<h1>' . $region_name .  ' ' . $service_name . '</h1>';
     }
 
     /********************************************************/
@@ -103,7 +103,6 @@ function insert_venue_header_content( $has_region = true ) {
     } else {
 
       $tax_type = 'venues';
-
       $phrase = set_venue_type_name( $venue_name, $region_name, $tax_type, $tax_venue_type_slug );
 
     }
